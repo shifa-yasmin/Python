@@ -1,2 +1,6 @@
-a,b,c=10,20,30
-print(a,b,c)
+name="shifa"
+age=19
+isSuccuss=True
+print(type(name))
+print(type(age))
+print(type(isSuccuss))
