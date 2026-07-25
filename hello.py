@@ -90,9 +90,18 @@
 # print(arr)
 
 
-students={
-       "name":"shifa",
-        "age":10,
-        "place":"koramkod"
-}
-print(students)
+# students={
+#        "name":"shifa",
+#         "age":10,
+#         "place":"koramkod"
+# }
+# print(students["name"])
+
+
+# arr={1,1,2,2,3,4,5}
+# print(arr)
+
+
+arr=[11,12,44,66,10]
+arr.reverse()
+print(arr)
