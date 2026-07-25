@@ -113,6 +113,12 @@
 # print(num)
 
 
-numbers = [10, 20, 20, 30, 40, 40]
-num=list(set(numbers))
-print(num)
+
+# numbers = [10, 20, 20, 30, 40, 40]
+# print(numbers.index(20))
+
+
+
+a={1,2,3}
+b={3,4,5,6}
+print(a.union(b))
