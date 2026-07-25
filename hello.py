@@ -102,6 +102,17 @@
 # print(arr)
 
 
-arr=[11,12,44,66,10]
-arr.reverse()
-print(arr)
+# arr=[11,12,44,66,10]
+# arr.reverse()
+# print(arr)
+
+
+
+# arr=[1,2,3,4,5,5]
+# num=arr[::-1]
+# print(num)
+
+
+numbers = [10, 20, 20, 30, 40, 40]
+num=list(set(numbers))
+print(num)
