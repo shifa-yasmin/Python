@@ -60,15 +60,23 @@
 #     print("not vowels")
 
 
-day=3
-match day:
- case 1:
-  print("sunday")
- case 2:
-  print("monday")
- case 3:
-   print("tuesday")
- case 4:
-   print("wednesday")
- case 5:
-   print("thursday")
+# day=3
+# match day:
+#  case 1:
+#   print("sunday")
+#  case 2:
+#   print("monday")
+#  case 3:
+#    print("tuesday")
+#  case 4:
+#    print("wednesday")
+#  case 5:
+#    print("thursday")
+
+
+
+arr=["apple","banana","mango"]
+arr.insert(0,"graps")
+arr.append("shifa")
+# arr[1]="graps"
+print(arr)
