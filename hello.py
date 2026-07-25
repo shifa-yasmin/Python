@@ -1,6 +1,5 @@
-name="shifa"
-age=19
-isSuccuss=True
-print(type(name))
-print(type(age))
-print(type(isSuccuss))
+num=-1
+if num>0:
+   print("possitive")
+else:
+   print("negative")
