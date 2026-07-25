@@ -37,10 +37,38 @@
 #     print("pass")
 
 
-mark=39
-if mark>30:
-    print("A grade")
-elif mark>20:
-    print("B grade")
-else:
-    print("D grade")
+# mark=39
+# if mark>30:
+#     print("A grade")
+# elif mark>20:
+#     print("B grade")
+# else:
+#     print("D grade")
+
+
+# admin="admin"
+# password="admin1234"
+# if admin=="admin" and password=="admin1234":
+#     print("succuss")
+# else:
+#     print("fail")
+
+# ch ="a"
+# if ch=="a" or"e" or"i" or"o" or "u":
+#     print("vowels")
+# else:
+#     print("not vowels")
+
+
+day=3
+match day:
+ case 1:
+  print("sunday")
+ case 2:
+  print("monday")
+ case 3:
+   print("tuesday")
+ case 4:
+   print("wednesday")
+ case 5:
+   print("thursday")
