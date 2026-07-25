@@ -75,8 +75,24 @@
 
 
 
-arr=["apple","banana","mango"]
-arr.insert(0,"graps")
-arr.append("shifa")
-# arr[1]="graps"
-print(arr)
+# arr=["apple","banana","mango"]
+# arr.insert(0,"graps")
+# arr.append("shifa")
+# # arr[1]="graps"
+# print(arr)
+
+
+
+# arr=["shifa","safa","shahma"]
+# print(arr[1])
+
+# arr=(1,2,3,4)
+# print(arr)
+
+
+students={
+       "name":"shifa",
+        "age":10,
+        "place":"koramkod"
+}
+print(students)
