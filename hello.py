@@ -247,5 +247,17 @@
 
 
 
-sqr={x:x*x for x in range(1,6)}
-print(sqr)
+# sqr={x:x*x for x in range(1,6)}
+# print(sqr)
+
+
+# name=" SHIFA "
+# print(name.strip())
+
+# name="shifa"
+# print(name.replace("shifa","i love you"))
+
+
+
+name="shifa yasmin"
+print(name.find("yasmin"))
