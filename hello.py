@@ -156,9 +156,56 @@
 #     print(n)
 
 
+# stydents={
+#     "name":"sgifa",
+#     "age":10
+# }
+# stydents["place"]="koramkode"
+# print(stydents)
+
+
+# stydents={
+#     "name":"sgifa",
+#     "age":10
+# }
+# for n in stydents:
+#    print(n)
+
+
+
+
+# stydents={
+#     "name":"sgifa",
+#     "age":10
+# }
+# for n in stydents.values():
+#    print(n)
+
+
+# stydents={
+#     "name":"sgifa",
+#     "age":10
+# }
+# for n in stydents:
+#     # print(n)
+#     #  name
+#     #           age
+
+# for n in stydents.values():
+#    print(n)    //sgifa
+#                  10
+
+# for key , n in stydents.items():
+#     print(key ,":", n) //name : sgifa
+#                         age : 10
+
+
+
 stydents={
     "name":"sgifa",
     "age":10
 }
-stydents["place"]="koramkode"
-print(stydents)
+
+print(stydents.keys())
+print(stydents.values())
+print(stydents.items)
