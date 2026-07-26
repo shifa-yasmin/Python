@@ -240,7 +240,12 @@
 
 
 
-for n in range(1,6):
-    if n==4:
-        break
-    print(n)
+# for n in range(1,6):
+#     if n==4:
+#         break
+#     print(n)
+
+
+
+sqr={x:x*x for x in range(1,6)}
+print(sqr)
