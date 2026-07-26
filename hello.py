@@ -201,11 +201,30 @@
 
 
 
+# stydents={
+#     "name":"sgifa",
+#     "age":10
+# }
+
+# print(stydents.keys())
+# print(stydents.values())
+# print(stydents.items())
+
+
+# stydents={
+#     "name":"sgifa",
+#     "age":10
+# }
+# # stydents.update({"name":"safa","age":10})
+# stydents.clear()
+# print(stydents)
+
+
+
+
 stydents={
     "name":"sgifa",
     "age":10
 }
-
-print(stydents.keys())
-print(stydents.values())
-print(stydents.items)
+stydents.pop("age")
+print(stydents)
