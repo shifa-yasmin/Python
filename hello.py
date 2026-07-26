@@ -143,9 +143,22 @@
 # print(arr.difference(arr1))
 
 
-a = {1, 2, 3}
-b = {4, 5, 6,7,3}
+# a = {1, 2, 3}
+# b = {4, 5, 6,7,3}
 
-a.update(b)
+# a.update(b)
 
-print(a)
+# print(a)
+
+
+# arr=(1,2,3,4,5,6)
+# for n in arr:
+#     print(n)
+
+
+stydents={
+    "name":"sgifa",
+    "age":10
+}
+stydents["place"]="koramkode"
+print(stydents)
