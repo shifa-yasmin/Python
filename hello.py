@@ -133,5 +133,19 @@
 # arr = [10, 20, 20, 30, 40, 40]
 # print(count(arr))
 
-arr = ("apple", "banana", "orange", "apple", "grape")
-print(arr.index("orange"))
+# arr = ("apple", "banana", "orange", "apple", "grape")
+# print(arr.index("orange"))\
+
+
+
+# arr={11,22,33,44}
+# arr1={1,22,33}
+# print(arr.difference(arr1))
+
+
+a = {1, 2, 3}
+b = {4, 5, 6,7,3}
+
+a.update(b)
+
+print(a)
