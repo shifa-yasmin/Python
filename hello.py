@@ -119,6 +119,19 @@
 
 
 
-a={1,2,3}
-b={3,4,5,6}
-print(a.union(b))
+# a=[1,2,3]
+# b=[3,4,5,6]
+# print(a.union(b))
+
+
+
+# arr=["mango","banana"]
+# arr.extend(["orange","bnana"])
+# print(arr)
+
+
+# arr = [10, 20, 20, 30, 40, 40]
+# print(count(arr))
+
+arr = ("apple", "banana", "orange", "apple", "grape")
+print(arr.index("orange"))
