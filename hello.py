@@ -259,5 +259,19 @@
 
 
 
-name="shifa yasmin"
-print(name.find("yasmin"))
+# name="python"
+# print(name[2:])
+
+# words = ["Python", "is", "Easy"]
+# print(" ".join(words))
+
+
+
+# name="SHIhifa yasmin p"
+# print(name.swapcase())
+
+
+def name():
+    print("shifa yasmin")
+
+name()
