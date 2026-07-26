@@ -222,9 +222,25 @@
 
 
 
-stydents={
-    "name":"sgifa",
-    "age":10
-}
-stydents.pop("age")
-print(stydents)
+# stydents={
+#     "name":"sgifa",
+#     "age":10
+# }
+# stydents.pop("age")
+# print(stydents)
+
+
+
+
+
+# i=1
+# while i<6:
+#     print(i)
+#     i+=1
+
+
+
+for n in range(1,6):
+    if n==4:
+        break
+    print(n)
