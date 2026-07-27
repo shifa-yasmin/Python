@@ -271,7 +271,56 @@
 # print(name.swapcase())
 
 
-def name():
-    print("shifa yasmin")
+# def name():
+#     print("shifa yasmin")
 
-name()
+# name()
+
+
+
+# def sum(a,b):
+#     print(a+b)
+
+# sum(10,20)
+
+
+# def sqrt(num):
+#     return num*num
+# result=sqrt(5)
+# print(result)
+
+
+# def name(name="shifa"):
+#     print("hello" +name)
+
+# name()
+# name("john")
+
+
+
+# arr=[11,22,34,55]
+# arr.remove(10)
+# print(arr)
+
+
+# def val(**data):
+#     for key , n in data.items():
+#         print(key, ":", n)
+
+# val(name="shifa" , age=10, place="koramkode")
+
+
+
+# def num(*n):
+#    for i in n:
+#       print(i)
+
+# num(11,22,33,44)
+
+
+
+def name(*name1):
+    for i in name1:
+        print(i)
+
+name("shifa","safa","shahama")
