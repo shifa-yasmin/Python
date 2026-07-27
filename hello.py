@@ -367,7 +367,15 @@
 
 
 
+# def arr(name):
+#     for i in name[::-1]:
+#         print(i,end="")
+# arr("shifa")
+
+
+
 def arr(name):
     for i in name[::-1]:
-        print(i)
-arr("shifa")
+        print(i ,end=" ")
+
+arr(["shifa","safa","shahma"])
