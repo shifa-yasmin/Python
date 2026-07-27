@@ -340,10 +340,19 @@
 
 
 
-def arr(num):
-    if num==0:
-        return 
-    print(num)
-    arr(num-1)
+# def arr(num):
+#     if num==0:
+#         return 
+#     print(num)
+#     arr(num-1)
 
-arr(5)
+# arr(5)
+
+
+
+def arr(num):
+    if num==1:
+        return 1
+    return num*arr(num-1)
+print(arr(6))
+
