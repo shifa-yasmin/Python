@@ -530,8 +530,25 @@
 
 
 
-def arr(num,n):
-   for i in range(1,n+1):
-      if i not in num:
-         print(i)
-arr([1,2,3,5],5)
+# def arr(num,n):
+#    for i in range(1,n+1):
+#       if i not in num:
+#          print(i)
+# arr([1,2,3,5],5)
+
+
+# num=[x for x in range(1,10) if x%2==0]
+# print(num)
+
+
+
+def arr(num):
+   count=0
+   for i in range(1,num+1):
+      if num%i==0:
+         count+=1
+   if count==2:
+      print("prime number")
+   else:
+     print("not prime") 
+arr(4)
