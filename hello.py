@@ -319,8 +319,31 @@
 
 
 
-def name(*name1):
-    for i in name1:
-        print(i)
+# def name(*name1):
+#     for i in name1:
+#         print(i)
 
-name("shifa","safa","shahama")
+# name("shifa","safa","shahama")
+
+
+
+
+# def arr(**name):
+#     for i,val in name.items():
+#         print(i ,":" ,val)
+# arr(name="shifa",age=10)
+
+
+# def arr(*num):
+#     print(num)
+# arr(11,22,33,44)
+
+
+
+def arr(num):
+    if num==0:
+        return 
+    print(num)
+    arr(num-1)
+
+arr(5)
