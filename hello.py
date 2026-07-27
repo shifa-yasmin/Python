@@ -383,11 +383,54 @@
 
 
 
-def arr(num):
-    reverse=int(str(num)[::-1])
-    print(reverse)
-    if num==reverse:
-        print("pallindrom")
-    else:
-        print("not pallindrom")
-arr(1221)
+# def arr(num):
+#     reverse=int(str(num)[::-1])
+#     print(reverse)
+#     if num==reverse:
+#         print("pallindrom")
+#     else:
+#         print("not pallindrom")
+# arr(1221)
+
+
+
+# def arr(name):
+#     # if "a" in name or"e" in name or "i" in name or "o" in name or "u" in name:
+#     if "aeiou" in name:
+#         print("vowel number")
+#     else:
+#         print("not vowels")
+# arr("shfwi")
+
+
+# def arr(name):
+#     vowels="aeiou"
+#     for i in name:
+#         if i in vowels:
+#             print("vovels includes")
+#             return
+
+#     print("not vowel")
+# arr("shf")
+
+
+
+# def arr(name):
+#     vowels="aeiou"
+#     for i in name:
+#         if i in vowels:
+#             print("vowels include")
+#             return
+#     print("not vowels")
+# arr("shff")\
+
+
+
+def arr(name):
+    vowels="aeiou"
+    count=0
+    for i in name:
+        if i in vowels:
+            count+=1
+    print("count is",count)
+arr("shifa")
