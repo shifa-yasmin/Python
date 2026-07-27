@@ -627,7 +627,38 @@
 
 
 
+# def arr(name):
+#    name.count(33)
+#    print(name)
+# arr((11,22,44,33,33))
+
+
+
+# def arr(num):
+#     print(tuple(num))
+# arr([1,2,3,4,5])
+
+
+# def arr(a,b):
+#     print(a.difference(b))
+# arr({1,2,3},{2,4,5})
+
+
+
+# def arr(**data):
+#     for i,a in data.items():
+#         print(i ,":", a)
+# arr(name="shifa",age=10,place="koramkod")
+
+
+# sqrt={x:x*x for x in range(1,6)}
+# print(sqrt)
+
+
+
 def arr(name):
-    name.extend(["shahma","sachu"])
-    print(name)
-arr(["shifa","safa"])
+    for i in name:
+     if name.count(i)>1:
+        print(i ,end="")
+        name=name.replace(i," ")
+arr("shiifaa")
