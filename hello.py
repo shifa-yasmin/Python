@@ -467,7 +467,42 @@
 # print(num)\
 
 
-import random
-name=["shifa","safa","shahma"]
-random.shuffle(name)
-print(name)
+# import random
+# name=["shifa","safa","shahma"]
+# random.shuffle(name)
+# print(name)
+
+
+# import math
+# print(math.sin(8))
+
+
+# import math
+# print(math.lcm(2,4))
+
+# import math
+# print(math.gcd(4,6))
+
+
+
+
+# def arr(num):
+#        print(min(num)) 
+
+# arr([1,44,22,33,77])
+
+# import math
+# a=[11,44,22,55,33]
+# print(math.max)
+
+
+
+# def num(num1):
+#     print(set(num1))
+# num({11,22,33,22})
+
+
+
+def num(num1):
+    print(set(num1))
+num([11,22,33,22])
