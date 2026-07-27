@@ -350,9 +350,24 @@
 
 
 
-def arr(num):
-    if num==1:
-        return 1
-    return num*arr(num-1)
-print(arr(6))
+# def arr(num):
+#     if num==1:
+#         return 1
+#     return num*arr(num-1)
+# print(arr(6))
 
+
+
+# def arr(num):
+#     if(num<=1):
+#         return num
+#     return arr(num-1)+arr(num-2)
+# for i in range(8):
+#    print(arr(i))
+
+
+
+def arr(name):
+    for i in name[::-1]:
+        print(i)
+arr("shifa")
