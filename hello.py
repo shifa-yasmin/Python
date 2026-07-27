@@ -374,8 +374,20 @@
 
 
 
-def arr(name):
-    for i in name[::-1]:
-        print(i ,end=" ")
+# def arr(name):
+#     for i in name[::-1]:
+#         print(i ,end=" ")
 
-arr(["shifa","safa","shahma"])
+# arr(["shifa","safa","shahma"])
+
+
+
+
+def arr(num):
+    reverse=int(str(num)[::-1])
+    print(reverse)
+    if num==reverse:
+        print("pallindrom")
+    else:
+        print("not pallindrom")
+arr(1221)
