@@ -426,11 +426,48 @@
 
 
 
-def arr(name):
-    vowels="aeiou"
-    count=0
-    for i in name:
-        if i in vowels:
-            count+=1
-    print("count is",count)
-arr("shifa")
+# def arr(name):
+#     vowels="aeiou"
+#     count=0
+#     for i in name:
+#         if i in vowels:
+#             count+=1
+#     print("count is",count)
+# arr("shifa")
+
+
+
+# a=[1,2,3]
+# b=[4,5,6]
+# print(a+b)
+
+
+
+# sqr= lambda x:x*x
+# print(sqr(8))
+
+
+# sum= lambda a,b :a+b
+# print(sum(10,20))
+
+
+# import  math
+# print(math.sqrt(5))
+# print(math.factorial(5))
+# print(math.pi)
+
+
+# import random
+# print(random.randint(1,10))
+
+
+# import random
+# num=[1,2,3,4,6]
+# random.shuffle(num)
+# print(num)\
+
+
+import random
+name=["shifa","safa","shahma"]
+random.shuffle(name)
+print(name)
