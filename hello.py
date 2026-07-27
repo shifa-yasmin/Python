@@ -542,13 +542,92 @@
 
 
 
-def arr(num):
-   count=0
-   for i in range(1,num+1):
-      if num%i==0:
-         count+=1
-   if count==2:
-      print("prime number")
-   else:
-     print("not prime") 
-arr(4)
+# def arr(num):
+#    count=0
+#    for i in range(1,num+1):
+#       if num%i==0:
+#          count+=1
+#    if count==2:
+#       print("prime number")
+#    else:
+#      print("not prime") 
+# arr(4)
+
+
+
+# name="shifa"
+# print(name[::-1])
+
+
+# def arr(name):
+#     for i in name[::-1]:
+#         print(i,end="")
+# arr("shifa")
+
+
+
+# def num(a):
+#     count=0
+#     vowels="aeiou"
+#     for i in a:
+#         if i in vowels:
+#             count+=1
+#     print(count)
+# num("shifa yasminii") 
+
+
+
+
+# def arr(name):
+#     res=name[::-1]
+#     if res in name:
+#         print("pallindrom")
+#     else:
+#         print("not pallindrom")
+# arr("shhs")
+
+
+
+# def arr(name):
+#     print(name.replace("shifa","i love java"))
+# arr("shifa")
+
+
+
+
+# def arr(name):
+#     print(len(name))
+# arr("shifa yasmin")
+
+
+
+
+# def arr(name):
+#     print(name.split())
+# arr("shifa yasmin")
+
+
+
+
+# def arr(name):
+#     print("_ " .join(name))
+# arr(["shifa","safa"])
+
+
+# def arr(name):
+#     print(name.strip())
+# arr(" shifag ")
+
+
+
+# def arr(name):
+#     print(name.capitalize())
+# arr("i love you")
+
+
+
+
+def arr(name):
+    name.extend(["shahma","sachu"])
+    print(name)
+arr(["shifa","safa"])
