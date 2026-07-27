@@ -503,6 +503,35 @@
 
 
 
-def num(num1):
-    print(set(num1))
-num([11,22,33,22])
+# def num(num1):
+#     print(set(num1))
+# num([11,22,33,22])
+
+
+# def num(num1):
+#   num1.sort(reverse=True) 
+#   print(num1[1])
+# num([11,99,66,77,33])
+
+
+# def arr(num):
+#    num.reverse()
+#    print(num)
+
+# arr({"name":"shifa","age":10})
+
+
+
+# def arr(num):
+#     for i in num:
+#         if(i%2==0):
+#             print(i ,end=",")
+# arr([11,22,1,2,3,4])
+
+
+
+def arr(num,n):
+   for i in range(1,n+1):
+      if i not in num:
+         print(i)
+arr([1,2,3,5],5)
