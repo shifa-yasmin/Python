@@ -721,13 +721,68 @@
 
 
 
-class studant:
+# class studant:
+#     def __init__(self,name,age):
+#         self.name=name
+#         self.age=age
+# s1=studant("shifa",19)
+# print(s1.name)
+# print(s1.age)
+
+
+# class sudents:
+#     def __init__(self,name):
+#            self.name=name
+#     def arr(self):
+#                  print(self.name,"my name")
+# h1=sudents("shifa")
+# h1.arr()
+           
+
+
+# class arr:
+#     def __init__(self,name,salary):
+#         self.name=name
+#         self.salary=salary
+#     def val(self):
+#         print("name is :", self.name)
+#         print("salary is:",self.salary)
+# h1=arr("shifa",100000)
+# h1.val()
+
+
+
+
+# class arr:
+#     def __init__(self,length,width):
+#         self.length=length
+#         self.width=width
+#     def triangle(self):
+#         print(self.length*self.width)
+        
+# h1=arr(4,3)
+# h1.triangle()
+
+
+
+# class arr:
+#     def __init__(self,name,age):
+#         self.name=name
+#         self.age=age
+#         print(self.name)
+#         print(self.age)
+# h1=arr("shifa",19)
+# h2=arr("safa",19)
+
+
+
+
+class arr:
+    school="duhss thotha"
     def __init__(self,name,age):
         self.name=name
         self.age=age
-s1=studant("shifa",19)
-print(s1.name)
-print(s1.age)
-
-
-
+h1=arr("shifa",19)
+h2=arr("safa",29)
+print(h1.name ,"-",arr.school)
+print(h2.name ,"-",arr.school)
