@@ -714,10 +714,20 @@
 
 
 
-class student:
-    def __init__(self):
-        print("shifa yasmin")
-h1=student()
+# class student:
+#     def __init__(self):
+#         print("shifa yasmin")
+# h1=student()
+
+
+
+class studant:
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+s1=studant("shifa",19)
+print(s1.name)
+print(s1.age)
 
 
 
