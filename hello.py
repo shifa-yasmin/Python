@@ -656,9 +656,42 @@
 
 
 
-def arr(name):
-    for i in name:
-     if name.count(i)>1:
-        print(i ,end="")
-        name=name.replace(i," ")
-arr("shiifaa")
+# def arr(name):
+#     for i in name:
+#      if name.count(i)>1:
+#         print(i ,end="")
+#         name=name.replace(i," ")
+# arr("shiifaa")
+
+
+
+# def arr(num):
+#     num.sort(reverse=True)
+#     print(num[1])
+# arr([11,33,22,44,99])
+
+
+# name="shiifa"
+# name1={x for x in name if x in name}
+# print(name1)
+
+
+
+# def arr(num):
+#     d={}
+#     for i in num:
+#         if i in d:
+#             d[i]+=1
+#         else:
+#             d[i]=1
+#     print(d)
+# arr("shifa")
+
+
+
+
+class student:
+    def name():
+        print("shifa yasmin")
+s1=student
+s1.name()
