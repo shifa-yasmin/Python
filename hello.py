@@ -690,8 +690,34 @@
 
 
 
+# class student:
+#     def name():
+#         print("shifa yasmin")
+# s1=student
+# s1.name()
+
+
+# class add:
+#     def name(self,a,b):
+#         print(a+b)
+# h1=add()
+# h1.name(10,20)
+
+
+
+
+# class add:
+#     def name(self):
+#         print("shifayasmin")
+# h1=add()
+# h1.name()
+
+
+
 class student:
-    def name():
+    def __init__(self):
         print("shifa yasmin")
-s1=student
-s1.name()
+h1=student()
+
+
+
