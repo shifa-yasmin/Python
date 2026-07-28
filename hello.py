@@ -777,12 +777,117 @@
 
 
 
-class arr:
-    school="duhss thotha"
-    def __init__(self,name,age):
-        self.name=name
-        self.age=age
-h1=arr("shifa",19)
-h2=arr("safa",29)
-print(h1.name ,"-",arr.school)
-print(h2.name ,"-",arr.school)
+# class arr:
+#     school="duhss thotha"
+#     def __init__(self,name,age):
+#         self.name=name
+#         self.age=age
+# h1=arr("shifa",19)
+# h2=arr("safa",29)
+# print(h1.name ,"-",arr.school)
+# print(h2.name ,"-",arr.school)
+
+
+# class arr:
+#     def __init__(self):
+#         name="shifa"
+#         print(name)
+# h1=arr()
+# # h1.person()
+
+
+
+
+# class students:
+#     def __init__(self,name):
+#         self.name=name
+#     def arr(self):
+#         print(self.name)
+# h1=students("shifa")
+# h1.arr()
+
+
+# class students:
+#     school="duhss thootha"
+#     @staticmethod
+#     def num():
+#         print(students.school)
+# students.num()
+
+
+
+# class student:
+#     def __init__(self,name):
+#         self.name=name
+#     def val(self):
+#         print("name is:",self.name)
+# class child(student):
+#     def val2(self):
+#         print("my name is :",self.name)
+# h1=child("shifa")
+# h1.val2()
+# h1.val()
+
+
+
+
+class parent:
+    def val(self):
+        print("shifa yasmin p")
+class child(parent):
+    def num(self):
+        print("safa yasmin")
+h1=child()
+h1.val()
+h1.num()
+
+
+
+class parent:
+    def val(self):
+        print("parent mother")
+class father:
+    def num(self):
+        print("mother")
+class child(parent,father):
+    def number(self):
+        print("shahma fathima")
+h1=child()
+h1.val()
+h1.num()
+h1.number()
+
+
+
+class father:
+    def val(self):
+        print("shifa yasmin")
+class mother(father):
+    def num(self):
+        print("shahma fathima")
+class child(mother):
+    def hwllo(self):
+        print("safa yasmin")
+h1=child()
+h1.val()
+h1.num()
+h1.hwllo()
+
+
+
+
+class parent:
+    def val(self):
+        print("shifa yasmin")
+class child(parent):
+    def num(self):
+        print("shahma fathima")
+class Hello(parent):
+    def hum(self):
+        print("sachu")
+h1=Hello()
+h1.hum()
+h1.val()
+h2=child()
+h2.num()
+h2.val()
