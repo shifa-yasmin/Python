@@ -831,63 +831,111 @@
 
 
 
-class parent:
-    def val(self):
-        print("shifa yasmin p")
-class child(parent):
-    def num(self):
-        print("safa yasmin")
-h1=child()
-h1.val()
-h1.num()
+# class parent:
+#     def val(self):
+#         print("shifa yasmin p")
+# class child(parent):
+#     def num(self):
+#         print("safa yasmin")
+# h1=child()
+# h1.val()
+# h1.num()
 
 
 
-class parent:
-    def val(self):
-        print("parent mother")
-class father:
-    def num(self):
-        print("mother")
-class child(parent,father):
-    def number(self):
-        print("shahma fathima")
-h1=child()
-h1.val()
-h1.num()
-h1.number()
+# class parent:
+#     def val(self):
+#         print("parent mother")
+# class father:
+#     def num(self):
+#         print("mother")
+# class child(parent,father):
+#     def number(self):
+#         print("shahma fathima")
+# h1=child()
+# h1.val()
+# h1.num()
+# h1.number()
 
 
 
-class father:
-    def val(self):
-        print("shifa yasmin")
-class mother(father):
-    def num(self):
-        print("shahma fathima")
-class child(mother):
-    def hwllo(self):
-        print("safa yasmin")
-h1=child()
-h1.val()
-h1.num()
-h1.hwllo()
+# class father:
+#     def val(self):
+#         print("shifa yasmin")
+# class mother(father):
+#     def num(self):
+#         print("shahma fathima")
+# class child(mother):
+#     def hwllo(self):
+#         print("safa yasmin")
+# h1=child()
+# h1.val()
+# h1.num()
+# h1.hwllo()
 
 
 
 
-class parent:
-    def val(self):
-        print("shifa yasmin")
-class child(parent):
-    def num(self):
-        print("shahma fathima")
-class Hello(parent):
-    def hum(self):
-        print("sachu")
-h1=Hello()
-h1.hum()
-h1.val()
-h2=child()
-h2.num()
-h2.val()
+# class parent:
+#     def val(self):
+#         print("shifa yasmin")
+# class child(parent):
+#     def num(self):
+#         print("shahma fathima")
+# class Hello(parent):
+#     def hum(self):
+#         print("sachu")
+# h1=Hello()
+# h1.hum()
+# h1.val()
+# h2=child()
+# h2.num()
+# h2.val()
+
+
+
+# class parent:
+#     def __init__(self,name=None):
+#         self.name=name
+# class child(parent):
+#     def num(self,name,age):
+#          super().__init__(name)
+#          self.age=age
+       
+# h1=child()
+# h1.num("shifa",19)
+# print(h1.name)
+# print(h1.age)
+
+
+# class parent:
+#     def __init__(self,name):
+#         self.name=name
+# class child(parent):
+#     def __init__(self,name,age):
+#         self.name=name
+#         self.age=age
+# h1=child("shifa",18)
+# print(h1.name)
+# print(h1.age)
+
+
+
+
+
+# class calculator:
+#     def num(self,*val):
+#         return sum(val)
+
+# c=calculator()
+# print(c.num(111,22,334))
+
+
+
+
+class calculator:
+    def val(self,a,b=0,c=0):
+        print(a+b+c)
+c=calculator
+c.val(10,20)
+c.val(1,2,3)
