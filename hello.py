@@ -1041,10 +1041,22 @@
 # arr("shifaaaa") 
 
 
-def arr(name):
- res="" 
- for i in name:
-  if i not in res:
-   res+=i
- print(res)
-arr("shiiffa")
+# def arr(name):
+#  res="" 
+#  for i in name:
+#   if i not in res:
+#    res+=i
+#  print(res)
+# arr("shiiffa")
+
+
+
+def arr(val):
+    freq={}
+    for i in val:
+        if i in freq:
+            freq[i]+=1
+        else:
+            freq[i]=1
+    print(freq)
+arr([1,2,1,3,4,3])
