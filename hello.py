@@ -1051,12 +1051,33 @@
 
 
 
-def arr(val):
-    freq={}
-    for i in val:
-        if i in freq:
-            freq[i]+=1
-        else:
-            freq[i]=1
-    print(freq)
-arr([1,2,1,3,4,3])
+# def arr(val):
+#     freq={}
+#     for i in val:
+#         if i in freq:
+#             freq[i]+=1
+#         else:
+#             freq[i]=1
+#     print(freq)
+# arr([1,2,1,3,4,3])
+
+
+
+# def arr(name):
+#     val={}
+#     for i in name:
+#         if i in val:
+#             val[i]+=1
+#         else:
+#             val[i]=1
+#     print(val)
+# arr("shifa")
+
+
+
+def annegram(a,b):
+    if sorted(a)==sorted(b):
+        print("anagram")
+    else:
+        print("not anagram")
+annegram("listen","silent")
