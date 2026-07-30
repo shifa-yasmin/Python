@@ -1075,9 +1075,18 @@
 
 
 
-def annegram(a,b):
-    if sorted(a)==sorted(b):
-        print("anagram")
-    else:
-        print("not anagram")
-annegram("listen","silent")
+# def val(name):
+#  for i in name:
+#   if name.count(i)==1:
+#    print(i)
+#    return
+            
+# val("aabbbcccdg")
+
+
+
+def val(name):
+    res=name.split(" ")
+    print(max(res,key=len))
+           
+val("i love you")
