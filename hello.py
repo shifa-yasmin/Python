@@ -933,9 +933,109 @@
 
 
 
-class calculator:
-    def val(self,a,b=0,c=0):
-        print(a+b+c)
-c=calculator
-c.val(10,20)
-c.val(1,2,3)
+# class calculator:
+#     def val(self,a,b=0,c=0):
+#         print(a+b+c)
+# c=calculator
+# c.val(10,20)
+# c.val(1,2,3)
+
+
+
+# class calculator:
+#     def val(self,*num):
+#         print(sum(num))
+# c=calculator
+# c.val(10,20,30)
+# c.val(30,348,156)
+
+
+
+
+# from abc import ABC ,abstractmethod
+# class Animal(ABC):
+#     @abstractmethod
+#     def sound(self):
+#         pass
+# class Shifa(Animal):
+#     def sound(self):
+#         print("shifa yasmin p")
+# c=Shifa()
+# c.sound()
+
+
+
+# arr="shifa"
+# print(arr.encode())
+
+
+
+
+
+# def num1(num):
+#      for i in num[::-1]:
+#        print(i,end="")    
+# num1("shifa")
+
+
+
+# arr="shifa"
+# print(arr[::-1])
+
+
+
+# def arr(num):  
+#     res=str(num)[::-1]
+#     if str(num)==res:
+#         print("pallindrom")
+#     else:
+#         print("not pallindrom")
+# arr(121)
+
+
+
+# def arr(name):
+#     vowels="aeiou"
+#     for i in name:
+#         if i in vowels:
+#             print("vowels")  
+#             return
+#     print("not vowels")
+# arr("shifa")
+
+
+
+# numb=[11,22,33,45]
+# it=iter(numb)
+# print(next(it))
+# print(next(it))
+# print(next(it))
+# print(next(it))
+
+
+
+
+# arr="shifa"
+# it=iter(arr)
+# print(next(it))
+# print(next(it))
+# print(next(it))
+# print(next(it))
+# print(next(it))
+
+
+# name="shifa"
+# it=iter(name)
+# for i in it:
+#     print(i)
+
+
+def arr(name):
+    vowels="aeiou"
+    count=0
+    for i in name:
+        if i in vowels:
+           count+=1
+
+    print(count) 
+arr("shifaaaa") 
