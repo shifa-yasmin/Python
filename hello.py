@@ -1092,11 +1092,62 @@
 # val([11,22,33,44,11,44])
 
 
-def num():
-    yield 1
-    yield 2
-    yield 3
-gen=num()
-print(next(gen))
-print(next(gen))
-print(next(gen))
+# def num():
+#     yield 1
+#     yield 2
+#     yield 3
+# gen=num()
+# print(next(gen))
+# print(next(gen))
+# print(next(gen))
+
+
+# def num():
+#     yield 1
+#     yield 2
+# gen=num()
+# print(next(gen))
+# print(next(gen))
+
+
+
+# class student:
+#     def __iter__(self):
+#         self.num=1
+#         return self
+#     def __next__(self):
+#         if self.num<=3:
+#             x=self.num
+#             self.num+=1
+#             return x
+#         else:
+#             raise StopIteration
+# a=student()
+# for i in a:
+#     print(i)
+
+
+# num=[10,20,33,44]
+# a=iter(num)
+# print(next(a))
+# print(next(a))
+# print(next(a))
+
+
+# num=[1]
+# id=iter(num)
+# print(next(id))
+# print(next(id))
+
+# names = ["Ali", "John", "Sara"]
+# for i in names:
+#     print(i)
+
+
+
+def count():
+    for i in range(1,7):
+        yield i
+a=count()
+for i in a:
+    print(i)
