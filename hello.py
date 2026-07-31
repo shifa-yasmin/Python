@@ -1184,10 +1184,21 @@
 
 
 
+# def val():
+#     for i in range(1,10):
+#         if i%2==0:
+#          yield i
+# a=val()
+# for i in a:
+#     print(i)
+
+
+
+
 def val():
     for i in range(1,10):
-        if i%2==0:
-         yield i
+        if i%2!=0:
+            yield i
 a=val()
 for i in a:
     print(i)
