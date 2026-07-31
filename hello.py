@@ -1195,10 +1195,21 @@
 
 
 
-def val():
-    for i in range(1,10):
-        if i%2!=0:
-            yield i
-a=val()
-for i in a:
-    print(i)
+# def val():
+#     for i in range(1,10):
+#         if i%2!=0:
+#             yield i
+# a=val()
+# for i in a:
+#     print(i)
+
+
+
+file = open("student.txt", "w")
+file.write("Name: Arshan\n")
+file.write("Age: 20")
+file.close()
+
+file = open("student.txt", "r")
+print(file.read())
+file.close()
