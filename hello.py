@@ -1085,8 +1085,18 @@
 
 
 
-def val(name):
-    res=name.split(" ")
-    print(max(res,key=len))
-           
-val("i love you")
+# def val(num):
+#    num.sort()
+#    for i in reversed(num):
+#       print(i)     
+# val([11,22,33,44,11,44])
+
+
+def num():
+    yield 1
+    yield 2
+    yield 3
+gen=num()
+print(next(gen))
+print(next(gen))
+print(next(gen))
