@@ -1205,14 +1205,26 @@
 
 
 
-file=open("student.txt","w")
-file.write("hello world")
-file.close()
+# file=open("student.txt","w")
+# file.write("hello world")
+# file.close()
 
-file=open("student.txt","a")
-file.write("\nshifa")
-file.close()
+# file=open("student.txt","a")
+# file.write("\nshifa")
+# file.close()
 
-file=open("student.txt","r")
-print(file.read())
-file.close()
+# file=open("student.txt","r")
+# print(file.read())
+# file.close()
+
+
+# file=open("student.txt","x")
+# file.close()
+
+
+#
+with open("sample.txt","r") as file:
+    print(file.read(5))
+    file.seek(0)
+    print(file.read(5))
+
