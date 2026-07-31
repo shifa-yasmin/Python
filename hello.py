@@ -1278,10 +1278,30 @@
 # main([2,4,5,6,7])
 
 
-def main(x):
-    return x * x
-def main2(num):
-    res=list(map(main,num))
-    print(res)
-main2([2,3,4,5])
+# def main(x):
+#     return x * x
+# def main2(num):
+#     res=list(map(main,num))
+#     print(res)
+# main2([2,3,4,5])
 
+
+
+# def arr(name):
+#     res=list(map(str.upper,name))
+#     print(res)
+# arr(["shifa","safa"])
+
+
+
+# def arr(name):
+#     res=list(map(str.lower,name))
+#     print(res)
+# arr(["SHIFA","SAFA"])
+    
+
+
+def val(num):
+    res=list(filter(lambda x:x%2!=0,num))
+    print(res)
+val([11,22,33,23,44])
