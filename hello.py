@@ -1145,9 +1145,49 @@
 
 
 
-def count():
-    for i in range(1,7):
-        yield i
-a=count()
+# def count():
+#     for i in range(1,7):
+#         yield i
+# a=count()
+# for i in a:
+#     print(i)
+
+
+
+
+# def val():
+#     yield 10
+#     yield 20
+#     yield 30
+# a=val()
+# for i in a:
+#     print(i)
+
+
+
+# def val():
+#     for i in range(1,8):
+#         yield i
+# a=val()
+# for i in a:
+#     print(i)
+
+
+
+# def val():
+#     for i in range(1,8):
+#         yield i
+# a=val()
+# for i in a:
+#     print(i*i)
+
+
+
+
+def val():
+    for i in range(1,10):
+        if i%2==0:
+         yield i
+a=val()
 for i in a:
     print(i)
