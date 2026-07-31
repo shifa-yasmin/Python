@@ -1218,13 +1218,70 @@
 # file.close()
 
 
-# file=open("student.txt","x")
+
+# with open("sample.txt","r") as file:
+#     print(file.read(5))
+#     file.seek(0)
+#     print(file.read(5))
+
+
+# with open("sample.txt","r") as file:
+#     file.read(5)
+#     print(file.tell())
+
+
+# try:
+#     with open("sample.txt","r") as file:
+#         print(file.read())
+# except FileNotFoundError:
+#     print("error")
+
+
+# file=open("student.txt","r")
+# print(file.readlines())
 # file.close()
 
 
-#
-with open("sample.txt","r") as file:
-    print(file.read(5))
-    file.seek(0)
-    print(file.read(5))
+# file=open("student.txt","r")
+# for i in file:
+#     print(i.strip())
+# file.close()
+# file = open("newfile.txt", "x")
+
+# file.close()
+
+
+
+
+# import os
+# if os.path.exists("student.txt"):
+#     print("Exist")
+# else:
+#     print("not exist")
+
+
+
+# import os
+# print(os.remove("newfile.txt"))
+
+
+
+# file=open("student.txt","r")
+# print(file.flush())
+# file.close()
+
+
+
+# def main(num):
+#     res=list(map(lambda x:x*x, num))
+#     print(res)
+# main([2,4,5,6,7])
+
+
+def main(x):
+    return x * x
+def main2(num):
+    res=list(map(main,num))
+    print(res)
+main2([2,3,4,5])
 
