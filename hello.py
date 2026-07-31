@@ -1205,11 +1205,14 @@
 
 
 
-file = open("student.txt", "w")
-file.write("Name: Arshan\n")
-file.write("Age: 20")
+file=open("student.txt","w")
+file.write("hello world")
 file.close()
 
-file = open("student.txt", "r")
+file=open("student.txt","a")
+file.write("\nshifa")
+file.close()
+
+file=open("student.txt","r")
 print(file.read())
 file.close()
