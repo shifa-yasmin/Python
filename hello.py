@@ -1367,14 +1367,59 @@
 
 
 
-def decorator(fun):
-    def inner():
-        print("shifa yasmin p")
-        fun()
-        print("safa yasmin p")
-    return inner
-# @decorator
-def outer():
-    print("shahma")
-outer=decorator(outer)
-outer()
+# def decorator(fun):
+#     def inner():
+#         print("shifa yasmin p")
+#         fun()
+#         print("safa yasmin p")
+#     return inner
+# # @decorator
+# def outer():
+#     print("shahma")
+# outer=decorator(outer)
+# outer()
+
+
+# i=1
+# while i<=5:
+#     print(i)
+#     i+=1
+
+
+# for i in range(1,10):
+#     if i==5:
+#         break
+#     print(i)
+
+
+
+# for i  in range(1,9):
+#     if i==5:
+#         continue
+#     print(i)
+
+
+# for i in range(7):
+#     pass
+# print("shifa")
+
+
+
+
+# def num(val):
+#   res=sorted(val)[::-1]
+#   print(res[1])
+# num([11,1,22,55,44])
+
+
+
+# def num(a,b):
+#       res=list(zip(a,b))
+#       print(res)
+# num([0,22,233],["shifa","safa","shahma"])
+
+def num(val):
+    val.discard(20)
+    print(val)
+num({10,20,30,40})
+
