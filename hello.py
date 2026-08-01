@@ -1330,10 +1330,51 @@
 
 
 
-def outer():
-    name="safa"
+# def outer():
+#     name="safa"
+#     def inner():
+#         print(name)
+#     return inner
+# a=outer()
+# a()
+
+
+
+# def outer():
+#     count=0
+#     def inner():
+#         nonlocal count
+#         count+=1
+#         return count
+#     return inner
+# h1=outer()
+# print(h1())
+
+
+# def val():
+#     return "hello"
+# print(val)
+# print(val())
+
+
+
+# def outer():
+#    def inner():
+#        print("shifa yasmin ")
+#    inner()
+
+# outer()
+
+
+
+def decorator(fun):
     def inner():
-        print(name)
+        print("shifa yasmin p")
+        fun()
+        print("safa yasmin p")
     return inner
-a=outer()
-a()
+# @decorator
+def outer():
+    print("shahma")
+outer=decorator(outer)
+outer()
