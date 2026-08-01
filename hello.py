@@ -1301,7 +1301,39 @@
     
 
 
-def val(num):
-    res=list(filter(lambda x:x%2!=0,num))
-    print(res)
-val([11,22,33,23,44])
+# def val(num):
+#     res=max(num,key=len)
+#     print(res)
+# val(["shifa","safa","shahma","fathimaa"])
+
+
+# from functools import reduce
+# def val(num):
+#     res=reduce(lambda x,y:x if x<y else y,num)
+#     print(res)
+# val([10,202,1,303,303])
+
+
+# name=["shifa","safa","shahma"]
+# age=[10,20,30]
+# res=list(zip(name,age))
+# print(res)
+
+
+# def outer():
+#     name="shifa"
+#     def inner():
+#         print(name)
+#     return inner
+# a=outer()
+# a()
+
+
+
+def outer():
+    name="safa"
+    def inner():
+        print(name)
+    return inner
+a=outer()
+a()
