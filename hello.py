@@ -1418,8 +1418,94 @@
 #       print(res)
 # num([0,22,233],["shifa","safa","shahma"])
 
-def num(val):
-    val.discard(20)
-    print(val)
-num({10,20,30,40})
+# def num(val):
+#     val.discard(20)
+#     print(val)
+# num({10,20,30,40})
 
+
+
+
+# num=[11,22,33]
+# print(12 not in num)
+
+
+# def fun(a):
+#     a.add(1999)
+#     print(a)
+# fun({11,22,33,44})
+
+
+
+
+# students={"name":"shifa","age":10,"place":"koramkode"}
+# for index,value in enumerate(students):
+#     print(index,":",value)
+
+
+
+# name="shifa YASasmin safa"
+# print(name.find("Y"))
+
+
+
+# def arr(a,b):
+#     return a+b
+# res=arr(10,20)
+# print(res)
+
+
+
+# def total(*numbers):
+#     print(sum(numbers))
+
+# total(10, 20, 30, 40)
+
+# def details(**data):
+#     print(data)
+
+# details(name="Ali", age=20)
+
+
+
+# def arr(**val):
+#     print(val)
+# arr(name="shifa",age=10)
+
+
+
+# def ar(**val):
+#     for key,value in val.items():
+#         print(key,":",value)
+# ar(name="safa",age=12,place="koramkode")
+
+
+
+# def val(n):
+#     if n<=0:
+#      return
+#     val(n-1)
+#     print(n)
+# val(9)
+
+
+# def arr(n):
+#     if n==1:
+#         return 1
+#     else:
+#         return n*arr(n-1)
+# print(arr(5))
+
+
+
+# def val(n):
+#     res=lambda x:x*x
+#     print(res(n))
+# val(5)
+
+
+
+def val(a):
+    res=lambda a: "even"  if a%2==0 else "odd"
+    print(res(a))
+val(10)
