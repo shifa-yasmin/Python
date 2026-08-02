@@ -1505,7 +1505,13 @@
 
 
 
-def val(a):
-    res=lambda a: "even"  if a%2==0 else "odd"
-    print(res(a))
-val(10)
+# def val(a):
+#     res=lambda a: "even"  if a%2==0 else "odd"
+#     print(res(a))
+# val(10)
+
+
+def val(val):
+    res=list(map(lambda x:x*2,val))
+    print(res)
+val([11,2,3,4,5])
