@@ -1635,8 +1635,234 @@
 
 
 
-class val:
-    @staticmethod
-    def name(name):
-        return name
-print(val.name("shifa"))
+# class val:
+#     # @staticmethod
+#     def name(name):
+#         return name
+# print(val.name("shifa"))
+
+
+
+# class hello:
+#     def __init__(self,name):
+#         self.name=name
+# class sample(hello):
+#     def simple(self, age):
+#         # super().__init__(name)
+#         self.age=age
+# h1=sample("shifa")
+# h1.simple(19)
+# print(h1.name)
+# print(h1.age)
+
+
+
+# class hello():
+#     def __init__(self,age):
+#         self.age=age
+# class hay(hello):
+#     def __init__(self, age,name):
+#         super().__init__(age)
+#         self.name=name
+# h1=hay(13,"shifa")
+# print(h1.name)
+# print(h1.age)
+
+
+
+
+# class hello():
+#     def __init__(self):
+#         print("shifa yasmin")
+#         super().__init__()
+# class hay():
+#     def __init__(self):
+#         print("safa yasmin p")
+#         super().__init__()
+# class Him(hello,hay):
+#     def __init__(self):
+#         super().__init__()
+# h1=Him()
+
+
+
+# class hello():
+#     def __init__(self):
+#         print("shifa yasmin")
+# class hay(hello):
+#     def __init__(self):
+#         super().__init__()
+#         print("safa yasmin")
+# class him(hay):
+#     def __init__(self):
+#         super().__init__()
+#         print("shahma fathima")
+# h1=him()
+
+
+# class hello():
+#     def __init__(self):
+#        print("shifa yasmin")
+# class hay(hello):
+#     def __init__(self):
+#         super().__init__()
+#         print("safa yasmin p")
+# class him(hello):
+#     def __init__(self):
+#         super().__init__()
+#         print("shahma")
+# h1=him()
+# h1=hay()
+    
+
+# class hello():
+#     def __init__(self,name=None):
+#         self.name=name
+# class him(hello):
+#     def val(self,age,name):
+#         self.age=age
+#         super().__init__(name)
+# h1=him()
+# h1.val(19,"shifa")
+# print(h1.name)
+# print(h1.age)
+    
+
+# class hello():
+#     def sount(self):
+#         print("shifa")
+# class hay(hello):
+#     def sount(self):
+#         print("safa")
+#         return super().sount()
+# class him(hay):
+#     def sount(self):
+#         print("shahma")
+#         return super().sount()
+# h1=him()
+# h1.sount()
+# h2=hay()
+# h2.sount()
+
+
+
+# class hello:
+#     def sum(self,a,b=0,c=0):
+#         return a+b+c
+# s=hello()
+# print(s.sum(10,20,30))
+       
+
+
+
+# from abc import ABC,abstractmethod
+# class vehicle(ABC):
+#     @abstractmethod
+#     def hell(self):
+#         pass
+# class sample(vehicle):
+#     def hell(self):
+#         print("safa yasmin")
+# class simple(sample):
+#     def hy(self):
+#         print("shahma")
+# h1=simple()
+# h1.hy()
+# h1.hell()
+    
+
+    
+# class hello():
+#     def arr(self,name):
+#      self.__name=name
+# h1=hello()
+# h1.arr("shifa")
+# print(h1.__name)
+
+# x="safa yasmin"
+# x.split()
+# for i in x:
+#     print(i, end="")
+
+
+
+# class Solution(object):
+#     def reverseString(self, s):
+#         """
+#         :type s: List[str]
+#         :rtype: None Do not return anything, modify s in-place instead.
+#         """
+#         for i in s.reverse():
+#             print(i)
+    
+# reverseString(["h","e","l","l","o"])   
+# reverseString(["H","a","n","n","a","h"])  
+
+
+
+# def name(s):
+#     for i in s[::-1]:
+#         print(i,end="")
+# name(["s","h","i","f","a"])
+
+
+
+# class Solution(object):
+#     def gcdOfOddEvenSums(self, n):
+        
+        
+# obj=Solution()
+# obj.gcdOfOddEvenSums(4)
+# obj.gcdOfOddEvenSums(5)
+
+
+
+# class Solution(object):
+#     def gcdOfOddEvenSums(self, n):
+#         for i in range(1,n+1):
+#             if i%2==0:
+#              print(i)
+        
+        
+# obj=Solution()
+# obj.gcdOfOddEvenSums(4)
+# obj.gcdOfOddEvenSums(5)
+
+# class Solution(object):
+#     def mergeTwoLists(self, list1, list2):
+#         list1.extend(list2)
+#         list1.sort()
+#         print(list1)
+        
+# obj=Solution()
+# obj.mergeTwoLists([1,2,4],[1,3,4])
+# obj.mergeTwoLists([],[])
+# obj.mergeTwoLists([],[0])
+
+
+
+
+# number=(10,20,30)
+# id=iter(number)
+# print(id.__next__())
+# print(next(id))
+# print(next(id))
+
+
+
+
+# def num(n):
+#     n.sort()
+#     for i in n[::-1]:
+#         res=i
+#         print(res,end="-")
+
+#     print("sec is:",res[1])
+# num([11,22,55,44,99])
+
+
+from functools import reduce
+def num(n,m):
+    res=list(zip(n,m))
+    print(res)
+num([11,22],["shifa","saga"])
