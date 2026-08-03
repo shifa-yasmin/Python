@@ -1511,7 +1511,132 @@
 # val(10)
 
 
-def val(val):
-    res=list(map(lambda x:x*2,val))
-    print(res)
-val([11,2,3,4,5])
+# def val(val):
+#     res=list(map(lambda x:x*2,val))
+#     print(res)
+# val([11,2,3,4,5])
+
+
+# from functools import reduce
+# def arr(n):
+#     res=reduce(lambda x,y:x+y,n)
+#     print(res)
+# arr([11,22,30,40])
+
+
+
+# from math import sqrt
+# def arr(val):
+#     res=list(map(sqrt,val))
+#     print(res)
+# arr([11,22,33,45])
+
+
+
+# from math import pow
+# def arr(n,m):
+#     print(pow(n,m))
+# arr(2,5)
+
+
+
+# import math
+# print(math.factorial(5))
+
+# import random
+# def arr(a):
+#       random.shuffle(a)
+#       print(a)
+# arr([11,22,33,44])
+
+# a=100
+# print(type(a))
+# del a
+# print(a)
+
+
+
+# def arr(val):
+#     print(frozenset(val))
+# arr([11,22,33,44])
+
+# a=10
+# b=19
+# largest=a if a>b else b
+# print(largest)
+
+
+
+
+# for i in range(3):
+#     print("for",i)
+#     j=1
+#     while j<3:
+#         print("while",j)
+#         j+=1
+
+
+
+# def arr(val):
+#     res={x:x*x for x in val}
+#     print(res)
+# arr([1,2,3,4,5])
+
+
+# arr=[1,2,3,4,5]
+# res=[x*2 for x in arr]
+# print(res)
+
+
+
+# def arr(val):
+#     res=list(map(x%2==0 for x in val))
+#     print(res)
+# arr([11,22,33,44])
+
+
+
+# def arr(val):
+#     res=set(x for x in val)
+#     print(res)
+# arr([1,2,3,4,6,4,1])
+
+
+
+
+# def arr(**val):
+#      print(val)
+# arr(name="shiafa",age=20)
+
+
+# class arr:
+#     def val(self):
+#         print("shifa yasmin p")
+# h1=arr()
+# h1.val()
+
+
+
+# class val:
+#     def __init__(self,name):
+#         self.name=name
+# h1=val("shifa yasmin")
+# print(h1.name)
+
+
+
+# class val:
+#     @classmethod
+#     def name(cls,name):
+#         cls.name=name
+
+# val.name("shifa yasmin")
+# print(val.name)
+
+
+
+class val:
+    @staticmethod
+    def name(name):
+        return name
+print(val.name("shifa"))
