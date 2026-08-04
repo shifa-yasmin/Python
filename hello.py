@@ -1861,8 +1861,31 @@
 # num([11,22,55,44,99])
 
 
-from functools import reduce
-def num(n,m):
-    res=list(zip(n,m))
-    print(res)
-num([11,22],["shifa","saga"])
+# from functools import reduce
+# def num(n,m):
+#     res=list(zip(n,m))
+#     print(res)
+# num([11,22],["shifa","saga"])
+
+
+
+
+# class value:
+#     def __init__(self,name):
+#         self.name=name
+#     def __str__(self):
+#         return f"name is:{self.name}"
+# obj=value("shifa")
+# print(obj)
+
+
+
+
+class student:
+    def __init__(self,value):
+        self.value=value
+    def __add__(self, other):
+        return self.value+other.value
+n=student(10)
+n1=student(20)
+print(n+n1)
