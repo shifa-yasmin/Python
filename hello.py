@@ -1881,11 +1881,362 @@
 
 
 
-class student:
-    def __init__(self,value):
-        self.value=value
-    def __add__(self, other):
-        return self.value+other.value
-n=student(10)
-n1=student(20)
-print(n+n1)
+# class student:
+#     def __init__(self,value):
+#         self.value=value
+#     def __add__(self, other):
+#         return self.value+other.value
+# n=student(10)
+# n1=student(20)
+# print(n+n1)
+
+
+# try:
+#     num=int(input("enter value:"))
+#     print(100/num)
+# except:
+#     print("something wrong")
+
+
+
+# class student:
+#     def __init__(self):
+#         self.__name="shifa"
+#     def get_name(self):
+#         return self.__name
+#     def set_name(self,name):
+#         self.__name=name
+# obj=student()
+# print(obj.get_name())
+# obj.set_name("safa")
+# print(obj.get_name())
+
+
+
+# from abc import ABC,abstractmethod
+# class student(ABC):
+#     @abstractmethod
+#     def __init__(self):
+#         pass
+# class Hello(student):
+#     def __init__(self):
+#         print("shifa yasmin")
+#     def him(self):
+#         print("safayas")
+# obj=Hello()
+# obj.him()
+
+# a = 10        # int
+# b = 5.5       # float
+# result = a + b
+# print(result)
+# print(type(result))
+
+
+
+
+# arr=[11,22,335,55]
+# print(frozenset(arr))
+
+
+# for i in range(1,4):
+#     print("for:",i)
+
+#     j=1
+#     while j<3:
+#         print(j)
+#         j+=1
+
+
+
+# def num(a,b):
+#       res=list(zip(a,b))
+#       print(res)
+# num([0,22,233],["shifa","safa","shahma","sachu"])
+
+
+
+# def val(n):
+#   vowels="aeiou"
+#   count=0
+#   for i in n:
+#     if i in vowels:
+#       count+=1
+      
+#   print("count is:",count)
+
+# val("ssshhshhhhhiiiiiiii")
+
+
+
+
+# a={1,2,3,3}
+# b={4,5,6}
+# a.update(b)
+# print(a)
+
+
+
+
+# def val(n):
+#     for key,i in n.items():
+#         print(key,":",i)
+# val({"name":"shifa","age":10,"place":"malapputam"})
+    
+
+
+
+# def val(n):
+#     sqrt=["even" if i%2==0 else "odd" for i in n]
+#     print(sqrt)
+
+# val([1,2,3,4,5,6,7])
+
+
+
+
+# def val(n):
+#      count=0
+#      for i in range(2,n+1):
+#           if n%i==0:
+#                count+=1
+
+#      if count==1:
+#           print("prime")
+#      else:
+#           print("not prime")
+# val(7)
+
+
+# def val(m):
+#     res=str(m)
+#     print(res)
+#     if res=="".join(reversed(res)):
+#         print("pallindom")
+#     else:
+#         print("not pallindrom") 
+# val(123)
+
+
+
+
+# def arr(n):
+#     print(max(n))
+# arr([11,22,12,66,44])
+
+
+
+# def val(n):
+#     for i in n:
+#         print(i,"*",end="")
+# val("shifa yasmin")
+
+
+# def decorator(func):
+#     def name():
+#         print("shifa")
+#         func()
+#         print("safa")
+#     return name
+# @decorator
+# def him():
+#     print("shahma")
+# him()
+\
+
+# def decorator1(fun):
+#     def val(num):
+#         if num>0:
+#             fun(num)
+#         else:
+#             print("only possitive number")
+#     return val
+# @decorator1
+# def name(num1):
+#     print(num1*num1)
+# name(5)
+# name(-2)
+
+
+# def values(func):
+#     def val(age):
+#         if age>18:
+#             func("eligble for vote")
+#         else:
+#             print("not eligible")
+#     return val
+# @values
+# def name(n):
+#     print(n)
+# name(19)
+# name(18)
+
+
+
+# def arr(n):
+#     n.sort()
+#     for i in n[::-1]:
+#         print(i)
+#     print(n[-2])
+    
+# arr([11,22,12,8,55])
+
+
+
+
+# class Solution(object):
+#     def lengthOfLastWord(self, s):
+#         res=s.strip(" ")
+#         res1=res.split(" ")
+#         print(len(res1[-1]))
+# obj=Solution()
+# obj.lengthOfLastWord("Hello World")
+# obj.lengthOfLastWord("   fly me   to   the moon  ")
+# obj.lengthOfLastWord("luffy is still joyboy")
+
+
+
+
+
+
+# class hello:
+#     @classmethod
+#     def val(cls):
+#         cls.name="shifa"
+#         return cls.name
+# obj=hello()
+# print(obj.val())
+
+
+# class hello:
+#     @staticmethod
+#     def val():
+#         print("shifa yasmin p")
+# hello.val()
+
+
+
+# class hello:
+#     def val(self):
+#         print("shifa yasmin")
+# class sample(hello):
+#     def num(self,name):
+#         self.name=name
+#         return self.name
+# obj=sample()
+# obj.val()
+# print(obj.num("shifa"))
+
+
+
+
+# class hello:
+#     def __init__(self):
+#         super().__init__()
+#         print("Shifa yasmin")
+# class hay:
+#     def __init__(self):
+#         super().__init__()
+#         print("safa yasmin")
+# class sample(hello,hay):
+#       def __init__(self):
+#           super().__init__()
+#           print("shahma fath")
+# obj=sample()
+
+
+
+
+# def val(n,b):
+#     n.update(b)
+#     print(n)
+# val({1,2,3,4},{5,6,7})
+
+
+
+# def val(n):
+#     res=list(filter(lambda x:x%2==0,n))
+#     print(res)
+# val([11,22,33,44,55,77])
+
+
+# def arr(val):
+#     res=[x for x in val if x%2==0]
+#     print(res)
+# arr([1,2,3,4])
+
+
+
+# def arr(n):
+#     res=n.split()
+#     res1=max(res,key=len)
+#     print(res1)
+# arr("shifa yasmin pp")
+
+
+
+
+# def arr(n):
+#     n.sort()
+#     # print(n[::-1])
+#     print(n[-2])
+# arr([11,33,22,55,34])
+
+
+
+
+# class hello:
+#     def __init__(self):
+#         self._name="shifa"
+#     def get_method(self):
+#         return self._name
+#     def set_method(self,name):
+#         self._name=name
+# obj=hello()
+# print(obj.get_method())
+# obj.set_method("safa")
+# print(obj.get_method())
+
+
+
+# def val(n):
+#     largest=n[0]
+#     second=n[0]
+#     for i in n:
+#         if i>largest:
+#             second=largest
+#             largest=i
+#         elif i>second and i!=largest:
+#             i=second
+#     print("sec :",second)
+# val([11,33,22,55,88,88])
+
+
+
+# def decorator(func):
+#     def val():
+#         print("shiifa")
+#         func()
+#         print("safa")
+#     return val
+# @decorator
+# def name():
+#     print("safa yasmin")
+# name()
+
+
+
+
+# def val(n):
+#     res=[x%2==0 for x in n]
+#     print(res)
+# val([11,22,34,55])
+
+class Solution(object):
+    def searchInsert(self, nums, target):
+        if target in nums:
+            return nums.index(target)
+obj=Solution()
+print(obj.searchInsert([1,3,5,6],5))
+print(obj.searchInsert([1,3,5,6],2))
+print(obj.searchInsert([1,3,5,6],4))
