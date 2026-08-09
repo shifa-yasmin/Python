@@ -2232,11 +2232,191 @@
 #     print(res)
 # val([11,22,34,55])
 
-class Solution(object):
-    def searchInsert(self, nums, target):
-        if target in nums:
-            return nums.index(target)
-obj=Solution()
-print(obj.searchInsert([1,3,5,6],5))
-print(obj.searchInsert([1,3,5,6],2))
-print(obj.searchInsert([1,3,5,6],4))
+# class Solution(object):
+#     def searchInsert(self, nums, target):
+#         if target in nums:
+#             return nums.index(target)
+# obj=Solution()
+# print(obj.searchInsert([1,3,5,6],5))
+# print(obj.searchInsert([1,3,5,6],2))
+# print(obj.searchInsert([1,3,5,6],4))
+
+
+
+# class Solution(object):
+#     def merge(self, nums1, m, nums2, n):
+#         for i in nums1:
+#             if len(m):
+#                return i
+# obj=Solution()
+# print(obj.merge([1,2,3,0,0,0],3,[2,5,6],3))
+# print(obj.merge([1],1,[],0))
+# print(obj.merge([0],0,[1],1))
+
+
+# class Solution(object):
+#     def sortedSquares(self, nums):
+#         a=[int(i**2) for i in nums]
+#         a.sort()
+#         print(a)
+            
+# obj=Solution()
+# obj.sortedSquares([-4,-1,0,3,10])
+# obj.sortedSquares([-7,-3,2,3,11])
+
+
+# class Solution(object):
+#     def sortedSquares(self, nums):
+#         a=[int(i**2) for i in nums]
+#         print(a.sort())
+            
+# obj=Solution()
+# obj.sortedSquares([-4,-1,0,3,10])
+# obj.sortedSquares([-7,-3,2,3,11])
+        
+
+# class Solution(object):
+#     def isValid(self, s):
+#         for i in s:
+#             if "()[]{}" in s:
+#                  return True
+#             else:
+#                 return False
+# obj=Solution()
+# print(obj.isValid("()"))
+# print(obj.isValid("()[]{}"))
+# print(obj.isValid("(]"))
+
+
+# class Solution(object):
+#     def romanToInt(self, s):
+#         obj1 = {
+#             "I": 1,
+#             "V": 5,
+#             "X": 10,
+#             "L": 50,
+#             "C": 100,
+#             "D": 500,
+#             "M": 1000
+#         }
+#         res=0
+#         for i in s:
+#             res+=obj1[i]
+#         return res
+# obj=Solution()
+# print(obj.romanToInt("III"))
+# print(obj.romanToInt("LVIII"))
+# print(obj.romanToInt("MCMXCIV"))
+        
+# arr=[11,33,22,55,23]
+# max=arr[0]
+# for i in arr:
+#     if i>max:
+#         max=i
+# print(max)
+
+
+# import bisect
+
+# nums = [5, 12, 18, 25, 40, 55, 70, 99]
+
+# index = bisect.bisect_left(nums, 99)
+# bisect.insort(nums,44)
+
+# print(index)
+# print(nums)
+# print(index)
+
+
+
+# a=[1,2,3,4,5]
+# b=21,31,54
+# a.append(b)
+# print(a)
+
+
+
+# stack=[10,20,30]
+# stack.pop()
+# print(stack)
+
+# stack=[]
+# stack.append(40)
+# stack.append(30)
+# stack.append(20)
+# stack.append(10)
+# print(stack)
+
+
+
+
+# class Solution(object):
+#     def isAnagram(self, s, t):
+#         if sorted(s)==sorted(t):
+#            return True
+#         else:
+#             return False
+# obj=Solution()
+# print(obj.isAnagram("anagram","nagaram"))
+# print(obj.isAnagram("rat","car"))
+
+
+
+# class Solution(object):
+#     def addStrings(self, num1, num2):
+#         return int(num1)+int(num2)
+# obj=Solution()
+# print(obj.addStrings("11","123"))
+# print(obj.addStrings("456","77"))
+# print(obj.addStrings("0","0"))
+
+
+
+# class Solution(object):
+#     def addStrings(self, num1, num2):
+#          res=str(int(num1)+int(num2))
+#          return res
+# obj=Solution()
+# print(obj.addStrings("11","123"))
+# print(obj.addStrings("456","77"))
+# print(obj.addStrings("0","0"))
+
+
+
+# def val(arr,target):
+#     for i in range(len(arr)):
+#         if arr[i]==target:
+#             return i
+#     return -1
+# print(val([11,33,22,44,66],96))
+
+        
+        
+
+
+# def val(arr,target):
+#     low=0
+#     high=len(arr)-1
+#     while low<=high:
+#           mid=(low+high)//2
+#           if arr[mid]==target:
+#             return mid
+#           elif arr[mid]<target:
+#             low=mid+1
+#           else:
+#             high=mid-1
+#     return -1
+# arr=[10,20,30,40,50]
+# target=40
+# result=val(arr,target)
+# print(result)
+
+
+
+def val(n):
+    max=n[0]
+    for x in n:
+        if x>max:
+           max=x
+    return max
+print(val([11,22,44,33,12]))
