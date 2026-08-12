@@ -2391,7 +2391,12 @@
 # print(val([11,33,22,44,66],96))
 
         
-        
+        # dsa
+
+
+
+
+
 
 
 # def val(arr,target):
@@ -2413,10 +2418,653 @@
 
 
 
-def val(n):
-    max=n[0]
-    for x in n:
-        if x>max:
-           max=x
-    return max
-print(val([11,22,44,33,12]))
+# def val(n):
+#     max=n[0]
+#     for x in n:
+#         if x>max:
+#            max=x
+#     return max
+# print(val([11,22,44,33,12]))
+
+
+
+# def arr(val):
+#     if len(val)<=1:
+#         return val
+#     mid=len(val)//2
+#     left=arr(val[:mid])
+#     right=arr(val[mid:])
+#     return sorted(left+right)
+# print(arr([2,4,3,7,6,5]))
+
+# class Solution(object):
+#     def isPalindrome(self, s):
+#         res=""
+#         for ch in s:
+#             if ch.isalpha():
+#                res+=ch
+#         if res.lower()==res[::-1].lower():
+#             return True
+#         else:
+#             return False
+
+# obj=Solution()   
+# print(obj.isPalindrome("A man, a plan, a canal: Panama")) 
+# print(obj.isPalindrome("race a car")) 
+# print(obj.isPalindrome(" ")) 
+
+
+
+
+
+# class Solution(object):
+#     def validPalindrome(self, s):
+#         for i in s:
+#             if i in s:
+#                 return True
+            
+#         return False
+# obj=Solution()
+# print(obj.validPalindrome("aba"))
+# print(obj.validPalindrome("abca"))
+# print(obj.validPalindrome("abc"))
+
+
+
+
+# def val(n,m):
+#     if m==0:
+#         return 1
+#     return n*val(n,m-1)
+# print(val(2,5))
+
+
+
+# def val(n):
+#     arr=[]
+#     for i in range(n):
+#         arr.append(i)
+#     return arr
+# print(val(5))
+
+
+
+# def val(n):
+#     for i in str(n)[::-1]:
+#         print(i,end="")
+# val(123)
+
+
+
+# numbers = [1, 2, 3, ..., 1000000]
+
+# print(500000 in numbers)
+# numbers = {1, 2, 3, ..., 1000000}
+
+# print(500000 in numbers)
+
+
+
+# arr=[11,22,33,44]
+# new={}
+# for i in arr:
+#     new[i]=new.get(i,0)+1
+# print(new)
+
+
+# class Solution(object):
+#     def detectCapitalUse(self, word):
+#         for i in word:
+#             if i.upper():
+#                 return True
+#             else:
+#                 return False
+# obj=Solution()
+# print(obj.detectCapitalUse("USA"))
+# print(obj.detectCapitalUse("FlaG"))
+
+# class Solution(object):
+#     def detectCapitalUse(self, word):
+#         for i in word:
+#             if i.upper():
+#                 return True
+#             else:
+#                 return False
+# obj=Solution()
+# print(obj.detectCapitalUse("USA"))
+# print(obj.detectCapitalUse("FlaG"))
+
+
+
+# class Solution(object):
+#     def detectCapitalUse(self, word):
+#         # for i in word:
+#             if word.isupper():
+#                 return True
+#             else:
+#                 return False
+# obj=Solution()
+# print(obj.detectCapitalUse("USA"))
+# print(obj.detectCapitalUse("FlaG"))
+
+
+
+# class Solution(object):
+#     def detectCapitalUse(self, word):
+#         for i in word:
+#             if  word.isupper() or word.islower() or word[0].isupper() and word[1:].islower():
+#                 return True
+#             else:
+#                 return False
+# obj=Solution()
+# print(obj.detectCapitalUse("USA"))
+# print(obj.detectCapitalUse("FlaG"))
+
+
+# class Solution(object):
+#     def capitalizeTitle(self, title):
+#         return title.split()
+# obj=Solution()
+# print(obj.capitalizeTitle("capiTalIze tHe titLe"))
+# print(obj.capitalizeTitle("First leTTeR of EACH Word"))
+# print(obj.capitalizeTitle("i lOve leetcode"))
+
+
+
+
+# class Solution(object):
+#     def capitalizeTitle(self, title):
+#         res=title.split()
+#         for i in res:
+#             if len(i)>=3:
+#                 return title.title()
+#             else:
+#                 return title.lower()
+# obj=Solution()
+# print(obj.capitalizeTitle("capiTalIze tHe titLe"))
+# print(obj.capitalizeTitle("First leTTeR of EACH Word"))
+# print(obj.capitalizeTitle("i lOve leetcode"))
+
+
+# class Solution(object):
+#     def capitalizeTitle(self, title):
+#         res=title.split()
+#         for i in res:
+#             if len(i)==1 and len(i)==2:
+#                 return title.lower()
+#             else:
+#                 return title.title()
+# obj=Solution()
+# print(obj.capitalizeTitle("capiTalIze tHe titLe"))
+# print(obj.capitalizeTitle("First leTTeR of EACH Word"))
+# print(obj.capitalizeTitle("i lOve leetcode"))
+
+
+
+
+# class Solution(object):
+#     def capitalizeTitle(self, title):
+#         res=title.split()
+#         ans=[]
+#         for i in res:
+#             if len(i)<=2:
+#                 ans.append(i.lower())
+#             else:
+#                 ans.append(i.capitalize())
+#         return " ".join(ans)
+# obj=Solution()
+# print(obj.capitalizeTitle("capiTalIze tHe titLe"))
+# print(obj.capitalizeTitle("First leTTeR of EACH Word"))
+# print(obj.capitalizeTitle("i lOve leetcode"))
+
+
+
+
+# def arr(val,target):
+#     seen={}
+#     for i,num in enumerate(val):
+#         needed=target-num
+#         if needed in seen:
+#             return [seen[needed],i]
+#         seen[num]=i
+# print(arr([2,7,3,2,4,8],9))
+
+
+
+
+# arr=[1,2,3,4,5,6,7,1,2,3,4]
+# freq={}
+# for num in arr:
+#     freq[num]=freq.get(num,0)+1
+# print(freq)
+
+
+
+# class Solution(object):
+#     def getLeastFrequentDigit(self, n):
+#         freq={}
+        
+#         for i in str(n):
+#             freq[i]=freq.get(i,0)+1
+#         return min(freq,key=lambda x:(freq[x],x))
+# obj=Solution()
+# print(obj.getLeastFrequentDigit(1553322))
+# print(obj.getLeastFrequentDigit(723344511))
+
+
+
+
+# class Solution(object):
+#     def getLeastFrequentDigit(self, n):
+#         freq={}
+#         for i in str(n):
+#             freq[i]=freq.get(i,0)+1
+#         res= min(freq,key=lambda x:(freq[x],x))
+#         return int(res)
+# obj=Solution()
+# print(obj.getLeastFrequentDigit(1553322))
+# print(obj.getLeastFrequentDigit(723344511))
+
+
+
+# class Solution(object):
+#     def maxFrequencyElements(self, nums):
+#         freq={}
+#         for i in nums:
+#             freq[i]=freq.get(i,0)+1
+#         res=max(freq,key=lambda x:(freq(x),x))
+#         return res
+# obj=Solution()
+# print(obj.maxFrequencyElements([1,2,2,3,1,4]))
+# print(obj.maxFrequencyElements([1,2,3,4,5]))
+
+
+
+# class Solution(object):
+#     def maxFrequencyElements(self, nums):
+#         freq={}
+#         for i in nums:
+#             freq[i]=freq.get(i,0)+1
+#         return max(freq)
+        
+# obj=Solution()
+# print(obj.maxFrequencyElements([1,2,2,3,1,4]))
+# print(obj.maxFrequencyElements([1,2,3,4,5]))
+
+
+# class Solution(object):
+#     def frequencySort(self, nums):
+#         freq={}
+#         res=[]
+#         for i in nums:
+#             freq[i]=freq.get(i,0)+1
+#             res=freq[i]
+#         return sort(res)
+# obj=Solution()
+# print(obj.frequencySort([1,1,2,2,2,3]))
+# print(obj.frequencySort([2,3,1,3,2]))
+# print(obj.frequencySort([-1,1,-6,4,5,-6,1,4,1]))
+
+
+# class Solution(object):
+#     def frequencySort(self, nums):
+#         freq={}
+#         for i in nums:
+#             freq[i]=freq.get(i,0)+1
+#         return list(sorted(freq))[::-1]
+# obj=Solution()
+# print(obj.frequencySort([1,1,2,2,2,3]))
+# print(obj.frequencySort([2,3,1,3,2]))
+# print(obj.frequencySort([-1,1,-6,4,5,-6,1,4,1]))
+        
+
+
+# class Solution(object):
+#     def frequencySort(self, nums):
+#         freq = {}
+
+#         for i in nums:
+#             freq[i] = freq.get(i, 0) + 1
+
+#         result = []
+
+#         for i in freq:
+#             result += [i] * freq[i]
+
+#         return result
+# obj=Solution()
+# print(obj.frequencySort([1,1,2,2,2,3]))
+# print(obj.frequencySort([2,3,1,3,2]))
+# print(obj.frequencySort([-1,1,-6,4,5,-6,1,4,1]))
+
+
+
+
+# class Solution(object):
+#     def mostFrequentEven(self, nums):
+#         freq={}
+#         for i in nums:
+#             freq[i]=freq.get(i,0)+1
+#         even=[i for i in freq if i%2==0]
+#         if not even:
+#             return -1
+#         else:
+#             return max(freq)
+# obj=Solution()
+# print(obj.mostFrequentEven([0,1,2,2,4,4,1]))
+# print(obj.mostFrequentEven([4,4,4,9,2,4]))
+# print(obj.mostFrequentEven([29,47,21,41,13,37,25,7]))
+
+
+
+
+# def val(arr,index,value):
+#     arr.append(None)
+#     for i in range(len(arr)-1,index,-1):
+#         arr[i]=arr[i-1]
+#     arr[index]=value
+#     return arr
+# print(val([10,20,30,40,50],2,24))
+        
+
+
+# def val(arr,index):
+#     for i in range(index,len(arr)-1):
+#         arr[i]=arr[i+1]
+#     arr.pop()
+#     return arr     
+# print(val([10,20,30,40,50],2))
+
+
+
+# def val(arr,value):
+#     for i in range(len(arr)-1):
+#         return i
+# print(val([10,20,30,40,50]))
+
+
+
+# arr=[1,2,3,4,5,6,7]
+# print(arr[2:4:2])
+
+
+
+# def val(a):
+#     return name+age
+# print(name="Shifa",age=10)
+
+
+
+# import copy
+# arr=[[10,20,30],[1,2,3,4],[9,8,7]]
+# new=copy.deepcopy(arr)
+# new[2][1]=100
+# print(arr)
+# print(new)
+
+
+
+# class Node:
+#     def __init__(self, data):
+#         self.data = data
+#         self.next = None
+# n1 = Node(10)
+# n2 = Node(20)
+# n3 = Node(30)
+# n1.next = n2
+# n2.next = n3
+# head = n1
+
+# current = head
+
+# while current:
+#     print(current.data, end=" → ")
+#     current = current.next
+
+# print("None")
+
+
+
+# class Node:
+#     def __init__(self,data):
+#         self.data=data
+#         self.next=None
+# n1=Node(10)
+# n2=Node(20)
+# n3=Node(30)
+# n1.next=n2
+# n2.next=n3
+# head=n1
+# current=head
+# while current:
+#     print(current.data,end="=>")
+#     current=cur
+# rent.next
+# print("none")
+
+
+
+# class node:
+#     def __init__(self,data):
+#         self.data=data
+#         self.next=None
+# head=node(20)
+# new=node(10)
+# new.next=head
+# head=new
+# current=head
+# while current:
+#     print(current.data,end="=>")
+#     current=current.next
+# print("none")
+
+
+
+# class node:
+#     def __init__(self,data):
+#         self.data=data
+#         self.next=None
+# head=node(10)
+# head.next=node(20)
+# head.next.next=node(30)
+# new=node(40)
+# current=head
+# while current.next:
+#     current=current.next
+# current.next=new
+# current=head
+# while current:
+#     print(current.data,end="=>")
+#     current=current.next
+# print("null")
+
+
+
+# class node:
+#     def __init__(self,data):
+#         self.data=data
+#         self.next=None
+# head=node(10)
+# head.next=node(20)
+# head.next.next=node(30)
+# head.next.next.next=node(40)
+# new=node(25)
+# current=head
+# while current.data!=20:
+#     current=current.next
+# new.next=current.next
+# current.next=new
+# current=head
+# while current:
+#     print(current.data,end="=>")
+#     current=current.next
+# print("null")
+
+
+# class node:
+#     def __init__(self,data):
+#         self.data=data
+#         self.next=None
+#         self.prev=None
+# n1=node(10)
+# n2=node(20)
+# n3=node(30)
+# n4=node(40)
+# n1.next=n2
+# n2.prev=n1
+
+# n2.next=n3
+# n3.prev=n2
+
+# n3.next=n4
+# n4.prev=n3
+# head=n1
+# current=head
+# while current:
+#       print(current.data,end="=>")
+#       current=current.next
+# print("none")
+# tail=n4
+# current=tail
+# while current:
+#      print(current.data,end="<=")
+#      current=current.prev
+# print("none")
+
+
+
+# class Node:
+#     def __init__(self, data):
+#         self.data = data
+#         self.prev = None
+#         self.next = None
+
+
+# class DoublyLinkedList:
+#     def __init__(self):
+#         self.head = None
+
+#     def insert_beginning(self, data):
+#         new_node = Node(data)
+
+#         # If list is not empty
+#         if self.head is not None:
+#             new_node.next = self.head
+#             self.head.prev = new_node
+
+#         # New node becomes head
+#         self.head = new_node
+
+#     def display(self):
+#         current = self.head
+
+#         while current:
+#             print(current.data, end=" ⇄ ")
+#             current = current.next
+
+#         print("None")
+
+
+# dll = DoublyLinkedList()
+# dll.insert_beginning(40)
+# dll.insert_beginning(30)
+# dll.insert_beginning(20)
+# dll.insert_beginning(10)
+# dll.display()
+
+
+
+# stack=[]
+# if len(stack)==0:
+#    print("empty")
+
+
+# arr="shifa"
+# for i in arr[::-1]:
+#     print(i,end="")
+
+
+# class Node:
+#     def __init__(self, data):
+#         self.data = data
+#         self.next = None
+
+
+# class Stack:
+#     def __init__(self):
+#         self.top = None
+
+#     def push(self, data):
+#         new_node = Node(data)
+#         new_node.next = self.top
+#         self.top = new_node
+
+#     def pop(self):
+#         if self.top is None:
+#             return "Stack is empty"
+
+#         value = self.top.data
+#         self.top = self.top.next
+#         return value
+
+#     def peek(self):
+#         if self.top is None:
+#             return "Stack is empty"
+
+#         return self.top.data
+
+#     def is_empty(self):
+#         return self.top is None
+
+
+# stack = Stack()
+
+# stack.push(10)
+# stack.push(20)
+# stack.push(30)
+
+# print("Top:", stack.peek())
+# print("Pop:", stack.pop())
+# print("Top:", stack.peek())
+# print("Empty:", stack.is_empty())
+
+
+
+# class node:
+#     def __init__(self,data):
+#         self.data=data
+#         self.next=None
+# class stack:
+#     def __init__(self):
+#         self.top=None
+#     def push(self,data):
+#         new=node(data)
+#         new.next=self.top
+#         self.top=new
+# stack=stack()
+# stack.push(10)
+# stack.push(20)
+# stack.push(30)
+# print(stack.top.data)
+
+
+
+
+class node:
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+class stack:
+    def __init__(self):
+        self.top=None
+    def push(self,data):
+        new_node=node(data)
+        new_node.next=self.top
+        self.top=new_node
+stack=stack()
+stack.push(10)
+stack.push(20)
+stack.push(30)
+print(stack.top.data)
+
+
