@@ -3050,21 +3050,196 @@
 
 
 
-class node:
-    def __init__(self,data):
-        self.data=data
-        self.next=None
-class stack:
-    def __init__(self):
-        self.top=None
-    def push(self,data):
-        new_node=node(data)
-        new_node.next=self.top
-        self.top=new_node
-stack=stack()
-stack.push(10)
-stack.push(20)
-stack.push(30)
-print(stack.top.data)
+# class node:
+#     def __init__(self,data):
+#         self.data=data
+#         self.next=None
+# class stack:
+#     def __init__(self):
+#         self.top=None
+#     def push(self,data):
+#         new_node=node(data)
+#         new_node.next=self.top
+#         self.top=new_node
+#     def pop(self):
+#         if self.top is None:
+#             return "empty data"
+#         data=self.top.data
+#         self.top=self.top.next
+#         return data
+
+# stack=stack()
+# stack.push(10)
+# stack.push(20)
+# stack.push(30)
+# print(stack.pop())
+# print(stack.top.data)\
 
 
+# class node:
+#     def __init__(self,data):
+#         self.data=data
+#         self.next=None
+# class stack:
+#     def __init__(self):
+#         self.top=None
+#     def push(self,data):
+#         new_node=node(data)
+#         new_node.next=self.top
+#         self.top=new_node
+#     def pop(self):
+#         if self.top is None:
+#             return "empty data"
+#         data=self.top.data
+#         self.top=self.top.next
+#         return data
+    
+#     def peek(self):
+#         if self.top is None:
+#             return "empty"
+#         return self.top.data
+#     def is_empty(self):
+#         return self.top is None
+# stack=stack()
+# stack.push(10)
+# stack.push(20)
+# stack.push(30)
+# print(stack.pop())
+# print(stack.top.data)
+# print("Top:", stack.peek())
+# print("Empty:", stack.is_empty())
+
+
+# def val(name):
+#     stack=[]
+#     for i in name:
+#         stack.append(i)
+#     result=""
+#     while stack:
+#         result+=stack.pop()
+#     return result
+# print(val("shifa"))
+
+
+# def val(name):
+#     stack=[]
+#     for i in name:
+#         stack.append(i)
+#     result="" 
+#     while stack:
+#         result+=stack.pop()
+#     return result
+# print(val("shifa"))
+
+
+# def val(s):
+#     stack=[]
+#     pairs={")":"(","]":"[","}":"{"}
+#     for i in s:
+#         if i in "({[":
+#             stack.append(i)
+#         else :
+#             if not stack or stack.pop()!=pairs[i]:
+#                 return False
+#     return len(stack)==0
+        
+# print(val("[{()}]"))
+
+
+
+# from collections import deque
+
+# queue = deque()
+# queue.append(10)
+# queue.append(20)
+# queue.append(30)
+
+# print(queue)
+
+
+
+
+
+
+# from collections import deque
+
+# queue = deque()
+
+# queue.append(10)  # Enqueue
+# queue.append(20)  # Enqueue
+# queue.append(30)  # Enqueue
+
+# print(queue)
+
+
+
+# from collections import deque
+# queue=deque()
+# queue.append(10)
+# queue.append(20)
+# queue.append(30)
+# queue.pop()
+# print(queue)
+
+
+# queue=[]
+# queue.append(10)
+# queue.append(20)
+# queue.append(30)
+# print(queue)
+# x=queue.pop(0)
+# print("remove:",x)
+# print(queue)
+
+
+
+# def val(n,target):
+#     num=[]
+#     for i in range(len(n)):
+#         if n[i]==target:
+#             return i
+#     return -1
+
+# print(val([11,33,22,44,56,66],66))
+
+
+# arr=[11,2,33,4,5,6]
+# res=sorted(arr,reverse=True)
+# arr.sort(reverse=True)
+# print(res)
+# print(arr)
+
+
+# name=["shifa","safa","yasmin"]
+# name.sort(key=len)
+# print(name)
+
+
+# address={
+#     "name":"shifa",
+#     "age":10,
+#     "place":"koramkode"
+# }
+# print(address["name"])
+# print(address["age"])
+
+
+# print(hash("apple"))
+
+# num=[1,2,3,4,5,2,5]
+# for i in range(len(num)):
+#     for j in range(i+1,len(num)):
+#         if num[i]==num[j]:
+#            print("dublicate",num[i])
+
+
+
+def val(n):
+    seen=set()
+    for i in n:
+        if i in seen:
+            return True
+        seen.add(i)
+    return False
+        
+print(val([1,2,3,4,5]))
