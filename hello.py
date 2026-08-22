@@ -3234,12 +3234,509 @@
 
 
 
-def val(n):
-    seen=set()
-    for i in n:
-        if i in seen:
-            return True
-        seen.add(i)
-    return False
+# def val(n):
+#     seen=set()
+#     for i in n:
+#         if i in seen:
+#             return True
+#         seen.add(i)
+#     return False
         
-print(val([1,2,3,4,5]))
+# print(val([1,2,3,4,5]))
+
+
+# num=[1,2,3,1,2,3,3,4]
+# seen={}
+# for i in num:
+#     if i in seen:
+#         seen[i]+=1
+#     else:
+#         seen[i]=1
+# print(seen)
+
+
+
+
+# num=[1,2,3,1,2,3,4,3]
+# freq={}
+# for i in num:
+#        freq[i]=freq.get(i,0)+1
+# print(freq)
+
+
+# def val(a):
+#     seen={}
+#     for i in a:
+#         seen[i]=seen.get(i,0)+1
+#     return max(seen,key=seen.get)
+# print(val([1,2,3,2,2,1,2]))
+
+
+# d = {
+#     "name": "Arshan",
+#     10: "hello",
+#     (1, 2): "point"
+# }
+# print(d[(1,2)])
+# print(type((1,)))
+
+
+# t = {10, {20, 30}}
+
+# print(t)
+
+
+
+
+# class node:
+#     def __init__(self,data):
+#         self.data=data
+#         self.next=None
+#         self.prev=None
+# class doubleLinkedList:
+#       def __init__(self):
+#            self.head=None
+#       def insert(self,data):
+#            new_node=node(data)
+#            new_node.next=self.head
+#            if self.head:
+#               self.head.prev=new_node
+#            self.head=new_node
+#       def display(self):
+#            current=self.head
+#            while current:
+#                 print(current.data,"=>")
+#                 current=current.next
+#            print("none")
+# all=doubleLinkedList()
+# all.insert(10)
+# all.insert(20)
+# all.insert(30)
+# all.insert(40)
+# all.display()  
+
+
+
+# class node:
+#     def __init__(self,data):
+#         self.data=data
+#         self.next=None
+#         self.prev=None
+# class doublylinkedlist:
+#     def __init__(self):
+#         self.head=None
+#     def addvalue(self,data):
+#         new_node=node(data)
+#         new_node.next=self.head
+#         self.head=new_node
+#     def dispay(self):
+#         current=self.head
+#         while current:
+#             print(current.data,"=>")
+#             current=current.next
+#         print("none")
+# all=doublylinkedlist()
+# all.addvalue(10)
+# all.addvalue(20)
+# all.addvalue(30)
+# all.dispay()
+
+
+
+# arr=[1,2,3,4,5]
+# for i in arr:
+#     if i==4:
+#         print("fount")
+
+
+
+# arr=[1,2,5,4,6,7,9,88]
+# largest=arr[0]
+# res=""
+# for i in arr:
+#     if i>largest:
+#        res=i
+# print(res)
+
+
+
+# def val(s,target):
+#     for i in s:
+#         if i==target:
+#             return True
+#     return False
+# print(val([1,2,3,4,88,77,66],77))
+
+
+# arr=[1,2,3,4,5,6]
+# print(arr[0])
+
+
+# def val(n,target):
+#     low=0
+#     high=len(n)-1
+#     while low<=high:
+#         mid=(low+high)//2
+#         if n[mid]==target:
+#             return mid
+#         elif n[mid]<target:
+#             low=mid+1
+#         else:
+#             high=mid-1
+#     return -1
+# print(val([1,3,11,44,66,77,99],99))
+
+
+
+# def val(n):
+#     if len(n)<=1:
+#         return n
+#     mid=len(n)//2
+#     left=val(n[:mid])
+#     right=val(n[mid:])
+#     return sorted(left+right)
+# print(val([3,2,6,45,8]))
+
+
+
+
+# arr = [10, 20, 30]
+# result = []
+# for x in arr:
+#     result.append(x * 2)
+# print(result)
+
+
+# def val(arr,index):
+#     for i in range(index,len(arr)-1):
+#         arr[i]=arr[i+1]
+#     arr.pop()
+#     return arr
+# print(val([1,2,3,4,5],3))
+
+
+
+# def val(arr):
+#     left=0
+#     right=len(arr)-1
+#     while left<right:
+#         arr[left],arr[right]=arr[right],arr[left]
+#         left+=1
+#         right-=2
+#     return arr
+# print(val([10,20,30,40,50]))
+
+
+
+# arr=[1,2,3,4,5]
+# a=arr[:]
+# print(a)
+
+
+
+# arr=[1,2,3,4,5]
+# b=arr[:]
+# b[0]=100
+# print(arr)
+# print(b)
+
+
+# import copy
+# arr=[[1,2,3,4],[3,4,5],[9,8,7]]
+# b=copy.deepcopy(arr)
+# b[0][2]=100
+# print(arr)
+# print(b)
+
+
+# arr=[[1,2,3,4],[3,4,5],[9,8,7]]
+# b=arr.copy()
+# b[0][2]=100
+# print(arr)
+# print(b)
+
+
+# class Solution:
+#     def frequencySort(self, nums: List[int]) -> List[int]:
+#         freq={}
+#         for i in nums:
+#             freq[i]=freq.get(i,0)+1
+#         return list(sorted(freq))
+# obj=Solution()
+# print(obj.frequencySort([1,1,2,2,2,3]))
+# print(obj.frequencySort([2,3,1,3,2]))
+# print(obj.frequencySort([-1,1,-6,4,5,-6,1,4,1]))
+
+
+
+
+# class Solution:
+#     def addStrings(self, num1: str, num2: str) -> str:
+#         res= int(num1)+int(num2)
+#         return str(res)
+# obj=Solution()
+# print(obj.addStrings("11","123"))
+# print(obj.addStrings("456","77"))
+# print(obj.addStrings("0","0"))
+
+
+
+# class node:
+#     def __init__(self,data):
+#         self.data=data
+#         self.next=None
+# n1=node(10)
+# n2=node(20)
+# n3=node(30)
+# n4=node(40)
+# n1.next=n2
+# n2.next=n3
+# n3.next=n4
+# current=n1
+# while current is not None:
+#     print(current.data)
+#     current=current.next
+
+
+
+# class node:
+#     def __init__(self,data):
+#         self.data=data
+#         self.next=None
+# n1=node(10)
+# n2=node(20)
+# n3=node(30)
+# n1.next=n2
+# n2.next=n3
+# head=n1
+# current=head
+
+# while current:
+#     if current.data==20:
+#         print("fount")
+#         break
+#     current=current.next
+
+
+
+
+# class node:
+#     def __init__(self,data):
+#         self.data=data
+#         self.next=None
+# n1=node(10)
+# n2=node(20)
+# n3=node(30)
+# n1.next=n2
+# n2.next=n3
+# head=n1
+# new_node=node(5)
+# new_node.next=head
+# head=new_node
+# current=head
+# while current:
+#     print(current.data,"=>",end="")
+#     current=current.next
+
+
+
+# class node:
+#     def __init__(self,data):
+#         self.data=data
+#         self.next=None
+# n1=node(10)
+# n2=node(20)
+# n3=node(30)
+# n1.next=n2
+# n2.next=n3
+
+# head=n1
+# current=head
+# position=2
+# new_node=node(22)
+# for i in range(position-1):
+#     current=current.next
+# new_node.next=current.next
+# current.next=new_node
+
+# current=head
+# while current:
+#     print(current.data,"=>",end="")
+#     current=current.next
+# print("None")\
+
+
+
+
+# class node:
+#     def __init__(self,data):
+#         self.data=data
+#         self.next=None
+# n1=node(10)
+# n2=node(20)
+# n3=node(30)
+# n1.next=n2
+# n2.next=n3
+# head=n1
+# current=head
+# while current.next.next:
+#     current=current.next
+# current.next=None
+# current=head
+# while current:
+#     print(current.data,"=>",end="")
+#     current=current.next
+# print("none")
+
+
+
+
+
+# class Solution:
+#     def intersect(self, nums1: List[int], nums2: List[int]) -> List[int]:
+#         for i in nums1:
+#             for j in nums2:
+#                 if nums1[i] in nums2[j]:
+#                     res=i
+#                 return res
+            
+# obj=Solution()
+# print(obj.intersect([1,2,2,1],[2,2]))
+# print(obj.intersect([4,9,5],[9,4,9,8,4]))
+
+
+
+# class Solution:
+#     def intersect(self, nums1: List[int], nums2: List[int]) -> List[int]:
+#         res={}
+#         res+=nums1
+# obj=Solution()
+# print(obj.intersect([1,2,2,1],[2,2]))
+# print(obj.intersect([4,9,5],[9,4,9,8,4]))
+
+
+
+# class node:
+#     def __init__(self,data):
+#         self.data=data
+#         self.next=None
+#         self.prev=None
+
+# n1=node(10)
+# n2=node(20)
+# n3=node(30)
+
+# n1.next=n2
+# n2.prev=n1
+
+# n2.next=n3
+# n3.prev=n2
+
+# head=n1
+# current=head
+# while current:
+#     print(current.data,"=>",end="")
+#     current=current.next
+# print("None")
+
+
+
+# class node:
+#     def __init__(self,data):
+#         self.data=data
+#         self.next=None
+#         self.prev=None
+# class doublyLinkedList:
+#     def __init__(self):
+#         self.head=None
+#     def insertValue(self,data):
+#         new_node=node(data)
+
+#         if self.head is None:
+#             self.head=new_node
+#             return
+#         new_node.next=self.head
+#         self.head.prev=new_node
+#         self.head=new_node 
+#     def display(self):
+#         current=self.head
+#         while current:
+#             print(current.data,"=>",end="")
+#             current=current.next
+#         print("none")
+# all=doublyLinkedList()
+# all.insertValue(10)
+# all.insertValue(20)
+# all.insertValue(30)
+# all.insertValue(40)
+# all.display()
+
+
+
+# class node:
+#     def __init__(self,data):
+#         self.data=data
+#         self.next=None
+#         self.prev=None
+# class doublyLinkedList:
+#     def __init__(self):
+#         self.head=None
+#     def insertValue(self,data):
+#         new_node=node(data)
+#         if self.head is None:
+#             self.head = new_node
+#             return
+#         current=self.head
+#         while current.next is not None:
+#             current=current.next
+#         current.next=new_node
+#         new_node.prev=current
+#     def display(self):
+#         current=self.head
+#         while current:
+#             print(current.data,"=>",end="")
+#             current=current.next
+#         print("none")
+# all=doublyLinkedList()
+# all.insertValue(10)
+# all.insertValue(20)
+# all.insertValue(30)
+# all.insertValue(40)
+# all.display()
+
+
+# class Solution:
+#     def addToArrayForm(self, num: List[int], k: int) -> List[int]:
+#         res=int("".join(map(str,num)))
+#         a=res+k
+#         b=list(map(int,str(a)))
+#         return b
+# obj=Solution()
+# print(obj.addToArrayForm([1,2,0,0],34))
+# print(obj.addToArrayForm([2,7,4],181))
+# print(obj.addToArrayForm([2,1,5],806))
+
+
+
+
+# class Solution:
+#     def plusOne(self, digits: List[int]) -> List[int]:
+#         digits[len(digits)]+=1
+#         return digits
+# obj=Solution()
+# print(obj.plusOne([1,2,3]))
+# print(obj.plusOne([4,3,2,1]))
+# print(obj.plusOne([9]))
+
+
+
+
+def hello(n):
+      if len(n)<=1:
+         return n
+      mid=len(n)//2
+      left=n[:mid]
+      right=n[mid:]
+      return sorted(left+right)
+            
+print(hello([1,3,2,4,6,5]))
