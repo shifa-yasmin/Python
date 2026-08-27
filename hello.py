@@ -4184,10 +4184,13 @@ n3.next=n4
 n4.next=n5
 head=n1
 current=head
-count=0
+sum=0
 while current:
     print(current.data,end="=>")
-    count+=1
+    sum+=current.data
     current=current.next
 print("none")
-print("count is:",count)
+print("sum is:",sum)
+
+
+
