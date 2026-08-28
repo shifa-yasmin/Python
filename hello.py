@@ -4169,28 +4169,282 @@
 
 
 
+# class node:
+#     def __init__(self,data):
+#         self.data=data
+#         self.next=None
+# n1=node(10)
+# n2=node(200)
+# n3=node(30)
+# n4=node(500)
+# n5=node(60)
+# n1.next=n2
+# n2.next=n3
+# n3.next=n4
+# n4.next=n5
+# head=n1
+# current=head
+# max=current.data
+# while current:
+#     print(current.data,end="=>")
+#     if current.data>max:
+#        max=current.data
+#     current=current.next        
+# print("none")
+# print("max is:",max)
+
+
+# class node:
+#     def __init__(self,data):
+#         self.data=data
+#         self.next=None
+# n1=node(10)
+# n2=node(20)
+# n3=node(30)
+# n4=node(40)
+# n1.next=n2
+# n2.next=n3
+# n3.next=n4
+# head=n1
+# current=head
+# min=current.data
+# while current:
+#     print(current.data,end="=>")
+#     if current.data<min:
+#         min=current.data
+#     current=current.next
+# print("none")
+# print("min val is:",min)
+
+
+
+
+
+# class node:
+#     def __init__(self,data):
+#         self.data=data
+#         self.next=None
+# n1=node(10)
+# n2=node(20)
+# n3=node(30)
+# n4=node(40)
+# n1.next=n2
+# n2.next=n3
+# n3.next=n4
+# head=n1
+# current=head
+# target=30
+# position=1
+# while current:
+#     if current.data==target:
+#         print("position is:",position)
+#     current=current.next
+#     position+=1
+# print("none")
+
+
+
+# class node:
+#     def __init__(self,data):
+#         self.data=data
+#         self.next=None
+# n1=node(10)
+# n2=node(20)
+# n3=node(30)
+# n4=node(40)
+# n1.next=n2
+# n2.next=n3
+# n3.next=n4
+# head=n1
+# current=head
+# while current.next.next:
+#     current=current.next
+# current.next=None
+# current=head
+# while current:
+#     print(current.data,end="=>")
+#     current=current.next
+# print("none")
+
+# class node:
+#     def __init__(self,data):
+#         self.data=data
+#         self.next=None
+# arr=[10,20,30,40,50]
+# head=None
+# current=None
+# for i in arr:
+#     new_node=node(i)
+#     if head is None:
+#         head=new_node
+#         current=new_node
+#     else:
+#         current.next=new_node
+#         current=new_node
+# current=head
+# while current:
+#     print(current.data,end="=>")
+#     current=current.next
+
+
+# class node:
+#     def __init__(self,data):
+#         self.data=data
+#         self.next=None
+# n1=node(10)
+# n2=node(20)
+# n3=node(30)
+# n4=node(40)
+# n1.next=n2
+# n2.next=n3
+# n3.next=n4
+# head=n1
+# current=
+# while current:
+#     print(current.data,end="=>")
+#     current=current.next
+# print("none")
+
+
+
+# import heapq
+
+# arr = [10, 5, 20, 2, 8]
+
+# heapq.heapify(arr)
+# print(arr)
+
+
+
+# student={
+#     "name":"shifa",
+#     "age":10,
+#     "place":"koramkode"
+# }
+# del student["name"]
+# print(student)
+
+
+
+# student={}
+# student["name"]="shifa"
+# student["age"]=10
+# print(student)
+
+
+
+# arr={11,22,33,44,55}
+# arr.pop()
+# print(arr)
+
+
+# student={
+#     "name":"shifa",
+#     "age":10,
+#     "place":"koramkode"
+# }
+# if  "age" in student:
+#     print("true")
+# print(student)
+
+
+# arr=[1,2,3,4,5,6]
+# left=0
+# right=len(arr)-1
+# while left<right:
+#     arr[left],arr[right]=arr[right],arr[left]
+#     left+=1
+#     right-=1
+# print(arr)
+
+
+# def val(arr,target):
+#     left=0
+#     right=len(arr)-1
+#     while left<=right:
+#         mid=(left+right)//2
+#         if arr[mid]==target:
+#             return mid
+#         elif arr[mid]<target:
+#             left=mid+1
+#         else:
+#             right=mid-1
+#     return -1
+# print(val([11,22,33,44,55],33))
+
+
+
+
+# class node:
+#     def __init__(self,data):
+#         self.data=data
+#         self.next=None
+#         self.prev=None
+# n1=node(10)
+# n2=node(20)
+# n3=node(30)
+# n4=node(40)
+# n1.next=n2
+# n2.prev=n1
+# n2.next=n3
+# n3.prev=n2
+# n3.next=n4
+# n4.prev=n3
+# head=n1
+# current=head
+# print("forward")
+# while current:
+#     print(current.data,end="=>")
+#     current=current.next
+# print("none")
+# tail=head
+# while tail.next:
+#     tail=tail.next
+# current=tail
+# while current:
+#     print(current.data,end="=>")
+#     current=current.prev
+# print("none")
+
+
 class node:
     def __init__(self,data):
         self.data=data
         self.next=None
-n1=node(10)
-n2=node(20)
-n3=node(30)
-n4=node(50)
-n5=node(60)
-n1.next=n2
-n2.next=n3
-n3.next=n4
-n4.next=n5
-head=n1
-current=head
-sum=0
-while current:
-    print(current.data,end="=>")
-    sum+=current.data
-    current=current.next
-print("none")
-print("sum is:",sum)
-
-
+        self.prev=None
+class doublylinkedlist:
+    def __init__(self):
+        self.head=None
+    def insert(self,data):
+        new_node=node(data)
+        if self.head is None:
+           self.head=new_node
+           return
+        current=self.head
+        while current.next:
+            current=current.next
+        current.next=new_node
+        new_node.prev=current
+    def forward(self):
+        current=self.head
+        while current:
+            print(current.data,end="=>")
+            current=current.next
+        print("none")
+        
+    def backward(self):
+        current=self.head
+        while current.next:
+            current=current.next
+        while current:
+            print(current.data,end="=>")
+            current=current.prev
+        print("none")
+obj=doublylinkedlist()
+obj.insert(10)
+obj.insert(20)
+obj.insert(30)
+obj.insert(40)
+obj.forward()
+obj.backward()
 
