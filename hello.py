@@ -4407,44 +4407,275 @@
 # print("none")
 
 
+
+
+
+#      ____________________create doubly linked list______________________
+
+
+# class node:
+#     def __init__(self,data):
+#         self.data=data
+#         self.next=None
+#         self.prev=None
+# class doublylinkedlist:
+#     def __init__(self):
+#         self.head=None
+#     def insert(self,data):
+#         new_node=node(data)
+#         if self.head is None:
+#            self.head=new_node
+#            return
+#         current=self.head
+#         while current.next:
+#             current=current.next
+#         current.next=new_node
+#         new_node.prev=current
+#     def forward(self):
+#         current=self.head
+#         while current:
+#             print(current.data,end="=>")
+#             current=current.next
+#         print("none")
+        
+#     def backward(self):
+#         current=self.head
+#         while current.next:
+#             current=current.next
+#         while current:
+#             print(current.data,end="=>")
+#             current=current.prev
+#         print("none")
+# obj=doublylinkedlist()
+# obj.insert(10)
+# obj.insert(20)
+# obj.insert(30)
+# obj.insert(40)
+# obj.forward()
+# obj.backward()
+
+
+        #    ______insert biggining doubly linked list
+
+# class node:
+#     def __init__(self,data):
+#         self.data=data
+#         self.next=None
+#         self.prev=None
+
+# class doublylinkedlist:
+#     def __init__(self):
+#         self.head=None
+#     def insertbiggining(self,data):
+#         new_node=node(data)
+#         if self.head is None:
+#             self.head=new_node
+#             return
+#         new_node.next=self.head
+#         self.head.prev=new_node
+#         self.head=new_node
+#     def forward(self):
+#         current=self.head
+#         while current:
+#             print(current.data,end="=>")
+#             current=current.next
+#         print("none")
+
+#     def backward(self):
+#         current=self.head
+#         while current.next:
+#             current=current.next
+#         while current:
+#             print(current.data,end="=>")
+#             current=current.prev
+#         print("none")
+# obj=doublylinkedlist()
+# obj.insertbiggining(10)
+# obj.insertbiggining(20)
+# obj.insertbiggining(30)
+# obj.insertbiggining(40)
+# obj.forward()
+# obj.backward()
+
+
+
+ #    ______insert end doubly linked list
+
+# class node:
+#     def __init__(self,data):
+#         self.data=data
+#         self.next=None
+#         self.prev=None
+# class doublelinkedlist:
+#     def __init__(self):
+#         self.head=None
+#     def insertend(self,data):
+#         new_node=node(data)
+#         if self.head is None:
+#             self.head=new_node
+#             return 
+#         current=self.head
+#         while current.next:
+#             current=current.next
+#         current.next=new_node
+#         new_node.prev=current
+
+#     def forward(self):
+#         current=self.head
+#         while current:
+#             print(current.data,end="=>")
+#             current=current.next
+#         print("none")
+# obj=doublelinkedlist()
+# obj.insertend(10)
+# obj.insertend(20)
+# obj.insertend(30)
+# obj.insertend(40)
+# obj.forward()
+
+
+
+#     _____delete beggoining double linkedlist
+
+# class node:
+#     def __init__(self,data):
+#         self.data=data
+#         self.next=None
+#         self.prev=None
+# class doublylinkedlist:
+#     def __init__(self):
+#         self.head=None
+#     def insert(self,data):
+#         new_node=node(data)
+#         if self.head is None:
+#             self.head=new_node
+#             return
+#         current=self.head
+#         while current.next:
+#             current=current.next
+#         current.next=new_node
+#         new_node.prev=current
+#     def deletefrst(self):
+#         if self.head is None:
+#             print("empty")
+#             return
+#         self.head=self.head.next
+#         if self.head is not None:
+#             self.head.prev=None 
+#     def display(self):
+#         current=self.head
+#         while current:
+#             print(current.data,end="=>")
+#             current=current.next
+#         print("none")
+# obj=doublylinkedlist()
+# obj.insert(10)
+# obj.insert(20)
+# obj.insert(30)
+# obj.insert(40)
+# obj.deletefrst()
+# obj.display()
+
+
+
+# _____delete ending double linkedlist
+
+# class node:
+#     def __init__(self,data):
+#         self.data=data
+#         self.next=None
+#         self.prev=None
+# class doublylinkedlist:
+#     def __init__(self):
+#         self.head=None
+#     def insert(self,data):
+#         new_node=node(data)
+#         if self.head is None:
+#             self.head=new_node
+#             return
+#         current=self.head
+#         while current.next:
+#             current=current.next
+#         current.next=new_node
+#         new_node.prev=current
+#     def deleteend(self):
+#         if self.head is None:
+#             print(" empty none")
+#             return
+#         if self.head.next is None:
+#                     self.head = None
+#                     return
+                
+#         current=self.head
+#         while current.next:
+#             current=current.next
+#         current.prev.next=None
+#     def display(self):
+#         current=self.head
+#         while current:
+#             print(current.data,end="=>")
+#             current=current.next
+#         print("none")
+# obj=doublylinkedlist()
+# obj.insert(10)
+# obj.insert(20)
+# obj.insert(40)
+# obj.insert(45)
+# obj.deleteend()
+# obj.display()
+            
+
+#                  ________ insert value specific position
+
 class node:
     def __init__(self,data):
         self.data=data
         self.next=None
         self.prev=None
-class doublylinkedlist:
+class doublelinkedlist:
     def __init__(self):
         self.head=None
     def insert(self,data):
         new_node=node(data)
         if self.head is None:
-           self.head=new_node
-           return
+            self.head=new_node
+            return 
         current=self.head
         while current.next:
             current=current.next
         current.next=new_node
         new_node.prev=current
-    def forward(self):
+    def insertposition(self,data,position):
+        new_node=node(data)
         current=self.head
-        while current:
-            print(current.data,end="=>")
+        if position == 1:
+            new_node.next = self.head
+            if self.head:
+                self.head.prev = new_node
+
+            self.head = new_node
+            return
+        current = self.head
+        for i in range(position-2):
             current=current.next
-        print("none")
-        
-    def backward(self):
+        new_node.next=current.next
+        new_node.prev=current
+        if current.next:
+            current.next.prev=new_node
+        current.next=new_node
+    def display(self):
         current=self.head
         while current.next:
-            current=current.next
-        while current:
             print(current.data,end="=>")
-            current=current.prev
+            current=current.next
         print("none")
-obj=doublylinkedlist()
+obj=doublelinkedlist()
 obj.insert(10)
 obj.insert(20)
 obj.insert(30)
 obj.insert(40)
-obj.forward()
-obj.backward()
+obj.insert(50)
+obj.insertposition(1000,1)
+obj.display()
+        
 
