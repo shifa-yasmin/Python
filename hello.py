@@ -4627,55 +4627,134 @@
 
 #                  ________ insert value specific position
 
-class node:
-    def __init__(self,data):
-        self.data=data
-        self.next=None
-        self.prev=None
-class doublelinkedlist:
-    def __init__(self):
-        self.head=None
-    def insert(self,data):
-        new_node=node(data)
-        if self.head is None:
-            self.head=new_node
-            return 
-        current=self.head
-        while current.next:
-            current=current.next
-        current.next=new_node
-        new_node.prev=current
-    def insertposition(self,data,position):
-        new_node=node(data)
-        current=self.head
-        if position == 1:
-            new_node.next = self.head
-            if self.head:
-                self.head.prev = new_node
+# class node:
+#     def __init__(self,data):
+#         self.data=data
+#         self.next=None
+#         self.prev=None
+# class doublelinkedlist:
+#     def __init__(self):
+#         self.head=None
+#     def insert(self,data):
+#         new_node=node(data)
+#         if self.head is None:
+#             self.head=new_node
+#             return 
+#         current=self.head
+#         while current.next:
+#             current=current.next
+#         current.next=new_node
+#         new_node.prev=current
+#     def insertposition(self,data,position):
+#         new_node=node(data)
+#         current=self.head
+#         if position == 1:
+#             new_node.next = self.head
+#             if self.head:
+#                 self.head.prev = new_node
+#             self.head = new_node
+#             return
+#         current = self.head
+#         for i in range(position-2):
+#             current=current.next
+#         new_node.next=current.next
+#         new_node.prev=current
+#         if current.next:
+#             current.next.prev=new_node
+#         current.next=new_node
+#     def display(self):
+#         current=self.head
+#         while current.next:
+#             print(current.data,end="=>")
+#             current=current.next
+#         print("none")
+# obj=doublelinkedlist()
+# obj.insert(10)
+# obj.insert(20)
+# obj.insert(30)
+# obj.insert(40)
+# obj.insert(50)
+# obj.insertposition(1000,3)
+# obj.display()
+        
 
-            self.head = new_node
-            return
-        current = self.head
-        for i in range(position-2):
-            current=current.next
-        new_node.next=current.next
-        new_node.prev=current
-        if current.next:
-            current.next.prev=new_node
-        current.next=new_node
+#                _____delete the specific position doubly linked list
+
+# class node:
+#     def __init__(self,data):
+#         self.data=data
+#         self.next=None
+#         self.prev=None
+# class doublylinkedlist:
+#     def __init__(self):
+#         self.head=None
+#     def insert(self,data):
+#         new_node=node(data)
+#         current=self.head
+#         if self.head is None:
+#             self.head=new_node
+#             return
+#         current=self.head
+#         while current.next:
+#             current=current.next
+#         current.next=new_node
+#         new_node.prev=current
+#     def deleteEnd(self,position):
+#         current=self.head
+#         if position==1:
+#             self.head=self.head.next
+#             if self.head:
+#                 self.head.prev=None
+#             return
+#         current=self.head
+#         for i in range(position-1):
+#             current=current.next
+#         current.prev.next=current.next
+#         if current.next:
+#             current.next.prev=current.prev
+#     def display(self):
+#         current=self.head
+#         while current:
+#             print(current.data,end="=>")
+#             current=current.next
+#         print("none")
+# obj=doublylinkedlist()
+# obj.insert(10)
+# obj.insert(20)
+# obj.insert(30)
+# obj.insert(40)
+# obj.deleteEnd(2)
+# obj.display()
+
+
+
+
+# stack=[]
+# stack.append(10)
+# stack.append(20)
+# stack.append(30)
+# stack.append(40)
+# print(stack)
+# if len(stack)==0:
+#     print("empty")
+# else:
+#     print("number")
+
+
+
+class stack:
+    def __init__(self):
+        self.stack=[]
+    def insert(self,data):
+        self.stack.append(data)
+    def delete(self):
+        self.stack.pop()
     def display(self):
-        current=self.head
-        while current.next:
-            print(current.data,end="=>")
-            current=current.next
-        print("none")
-obj=doublelinkedlist()
+        print(self.stack)
+obj=stack()
 obj.insert(10)
 obj.insert(20)
 obj.insert(30)
-obj.insert(40)
-obj.insert(50)
-obj.insertposition(1000,1)
 obj.display()
-        
-
+obj.delete()
+obj.display()
