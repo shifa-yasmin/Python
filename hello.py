@@ -4742,19 +4742,107 @@
 
 
 
-class stack:
+# class stack:
+#     def __init__(self):
+#         self.stack=[]
+#     def insert(self,data):
+#         self.stack.append(data)
+#     def delete(self):
+#         self.stack.pop()
+#     def display(self):
+#         print(self.stack)
+# obj=stack()
+# obj.insert(10)
+# obj.insert(20)
+# obj.insert(30)
+# obj.display()
+# obj.delete()
+# obj.display()
+
+
+# def val(s):
+#     stack=[]
+#     for i in s:
+#         stack+=i
+#     res=""
+#     while stack:
+#         res+=stack.pop()
+#     return res
+# print(val("shifa"))
+
+
+
+# class node:
+#     def __init__(self,data):
+#         self.data=data
+#         self.next=None
+#         self.prev=None
+# class stack:
+#     def __init__(self):
+#         self.head=None
+#     def push(self,data):
+#         new_node=node(data)
+#         new_node.next=self.head
+#         self.head=new_node
+#     def size(self):
+#         return self.size
+#     def display(self):
+#         current = self.head
+#         while current:
+#             print(current.data, end=" => ")
+#             current = current.next
+#         print("None")
+# stack = stack()
+# stack.push(10)
+# stack.push(20)
+# stack.push(30)
+
+# print("Stack:")
+# stack.display()
+# stack.size()
+
+
+
+
+        
+# class Solution:
+#     def detectCapitalUse(self, word: str) -> bool:
+#         if word==word.upper() or word==word.lower() or word==word.title() and word[1:].lower():
+#             return True
+#         return False
+# obj=Solution()
+# print(obj.detectCapitalUse("USA"))
+# print(obj.detectCapitalUse("FlaG"))
+
+
+# from collections import deque
+# queue=deque()
+# queue=[]
+# queue.append(10)
+# queue.append(20)
+# queue.append(30)
+# queue.append(40)
+# print(queue)
+# queue.popleft()
+# print(queue)
+
+
+
+class hashing:
     def __init__(self):
-        self.stack=[]
-    def insert(self,data):
-        self.stack.append(data)
-    def delete(self):
-        self.stack.pop()
-    def display(self):
-        print(self.stack)
-obj=stack()
-obj.insert(10)
-obj.insert(20)
-obj.insert(30)
-obj.display()
-obj.delete()
-obj.display()
+        self.size=10
+        self.table=[None]*self.size
+    def hashingTable(self,key):
+        return key%self.size
+    def insert(self,key,value):
+        index=self.hashingTable(key)
+        self.table[index]=value
+    def search(self,key):
+        index=self.hashingTable(key)
+        return self.table[index]
+obj=hashing()
+obj.insert(10,"shifa")
+obj.insert(20,"safa")
+obj.insert(22,"shahma")
+print(obj.search(10))
+
