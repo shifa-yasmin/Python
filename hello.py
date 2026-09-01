@@ -4828,21 +4828,113 @@
 
 
 
-class hashing:
-    def __init__(self):
-        self.size=10
-        self.table=[None]*self.size
-    def hashingTable(self,key):
-        return key%self.size
-    def insert(self,key,value):
-        index=self.hashingTable(key)
-        self.table[index]=value
-    def search(self,key):
-        index=self.hashingTable(key)
-        return self.table[index]
-obj=hashing()
-obj.insert(10,"shifa")
-obj.insert(20,"safa")
-obj.insert(22,"shahma")
-print(obj.search(10))
+# class hashing:
+#     def __init__(self):
+#         self.size=10
+#         self.table=[None]*self.size
+#     def hashingTable(self,key):
+#         return key%self.size
+#     def insert(self,key,value):
+#         index=self.hashingTable(key)
+#         self.table[index]=value
+#     def search(self,key):
+#         index=self.hashingTable(key)
+#         return self.table[index]
+# obj=hashing()
+# obj.insert(10,"shifa")
+# obj.insert(20,"safa")
+# obj.insert(22,"shahma")
+# print(obj.search(10))
+# print(obj.search(20))
+# print(obj.search(22))
 
+
+# class HashTable:
+#     def __init__(self, size):
+#         self.size = size
+#         self.table = [[] for _ in range(size)]
+#     def hash_function(self, key):
+#         return key % self.size
+#     def insert(self, key, value):
+#         index = self.hash_function(key)
+#         self.table[index].append((key, value))
+#     def display(self):
+#         for i in range(self.size):
+#             print(i, ":", self.table[i])
+# h = HashTable(5)
+# h.insert(10, "Apple")
+# h.insert(15, "Banana")
+# h.insert(6, "Appleeeeee")
+# h.insert(150, "Bananaaaaaaaa")
+# h.insert(7, "Mango")
+# h.insert(12, "Orange")
+# h.display()
+
+
+
+
+# name=[11,11,2,33,44,55,55,11]
+# freq={}
+# for i in name:
+#     freq[i]=freq.get(i,0)+1
+# max=max(freq,key=freq.get)
+# print(max)
+
+
+# def val(n):
+#     if n<=0:
+#         return
+#     print(n)
+#     val(n-1)
+# print(val(5))
+
+
+# def val(n):
+#     if n==1:
+#         return 1
+#     return n*val(n-1)
+# print(val(5))
+
+
+# def val(n):
+#     if len(n)==0:
+#         return ""
+#     return val(n[1:])+n[0]
+# print(val("shifa"))
+
+
+
+# def val(n,target):
+#     low=0
+#     high=len(n)-1
+#     while low<=high:
+#         mid=(low+high)//2
+#         if n[mid]==target:
+#             return mid
+#         elif low<target:
+#             low=mid+1
+#         else:
+#             high=mid-1
+# print(val([11,22,33,44,55],44))
+
+
+
+# class Solution:
+#     def isAnagram(self, s: str, t: str) -> bool:
+#         if list(s.sort()==t.sort()):
+#             return True
+#         return False
+# obj=Solution()
+# print(obj.isAnagram("anagram","nagaram"))
+# print(obj.isAnagram("rat","car"))
+
+
+
+def val(arr):
+    n=len(arr)
+    for i in range(n):
+        for j in range(0,n-i-1):
+            if arr[j]>arr[j+1]:
+                arr[j],arr[j+1]=arr[j+1],arr[j]
+    return arr
+print(val([2,4,3,6,8,7]))
