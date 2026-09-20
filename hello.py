@@ -4338,40 +4338,80 @@
 # print(arr)
 
 
-# student={
-#     "name":"shifa",
-#     "age":10,
-#     "place":"koramkode"
-# }
-# if  "age" in student:
-#     print("true")
-# print(student)
+# # student={
+# #     "name":"shifa",
+# #     "age":10,
+# #     "place":"koramkode"
+# # }
+# # if  "age" in student:
+# #     print("true")
+# # print(student)
+
+# class node:
+#     def __init__(self,data):
+#         self.data=data
+#         self.next=None
+# n1=node(10)
+# n2=node(20)
+# n3=node(30)
+# n4=node(50)
+# n1.next=n2
+# n2.next=n3
+# n3.next=n4
+# head=n1
+# new_node=node(5)
+# current=head
+# while current.next:
+#         current=current.next
+# current.next=new_node
+# current=head
+# while current.next:
+#     print(current.data,end="=>")
+#     current=current.next
+# print("none")
 
 
-# arr=[1,2,3,4,5,6]
-# left=0
-# right=len(arr)-1
-# while left<right:
-#     arr[left],arr[right]=arr[right],arr[left]
-#     left+=1
-#     right-=1
-# print(arr)
 
-
-# def val(arr,target):
-#     left=0
-#     right=len(arr)-1
-#     while left<=right:
-#         mid=(left+right)//2
-#         if arr[mid]==target:
-#             return mid
-#         elif arr[mid]<target:
-#             left=mid+1
-#         else:
-#             right=mid-1
-#     return -1
-# print(val([11,22,33,44,55],33))
-
+   
+# class node:
+#     def __init__(self,data):
+#         self.data=data
+#         self.next=None
+#         self.prev=None
+# class doublylinkedlist:
+#     def __init__(self):
+#         self.head=None
+#     def insertbeggining(self,data):
+#         new_node=node(data)
+#         current=self.head
+#         if self.head is None:
+#                 self.head=new_node
+#                 return
+#         new_node.next=self.head
+#         self.head.prev=new_node
+#         self.head=new_node
+#     def delete(self):
+#          if self.head is None:
+#               print("head none")
+#               return
+#          current=self.head
+#          while current.next:
+#               current=current.next
+#          current.prev.next=None
+         
+#     def display(self):
+#         current=self.head
+#         while current:
+#             print(current.data,end="=>")
+#             current=current.next
+#         print("none")
+# obj=doublylinkedlist()
+# obj.insertbeggining(10)
+# obj.insertbeggining(20)
+# obj.insertbeggining(30)
+# obj.insertbeggining(40)
+# obj.delete()
+# obj.display()
 
 
 
@@ -4379,128 +4419,53 @@
 #     def __init__(self,data):
 #         self.data=data
 #         self.next=None
-#         self.prev=None
 # n1=node(10)
 # n2=node(20)
 # n3=node(30)
 # n4=node(40)
 # n1.next=n2
-# n2.prev=n1
 # n2.next=n3
-# n3.prev=n2
 # n3.next=n4
-# n4.prev=n3
 # head=n1
 # current=head
-# print("forward")
+# position=2
+# for i in range(position-2):
+#     current=current.next
+# current.next=current.next.next
+# current=head
 # while current:
 #     print(current.data,end="=>")
 #     current=current.next
 # print("none")
-# tail=head
-# while tail.next:
-#     tail=tail.next
-# current=tail
-# while current:
-#     print(current.data,end="=>")
-#     current=current.prev
-# print("none")
 
 
 
+# def val(n):
+#     if len(n)==0:
+#         return ""
+#     return val(n[1:])+n[0]
+# print(val(""))
 
 
-#      ____________________create doubly linked list______________________
+# def val(n):
+#     stack=[]
+#     pairs={
+#         ")":"(",
+#         "]":"[",
+#         "}":"{"
+#     }
+#     for i in n:
+#         if i in "({[":
+#             stack.append(i)
+#         else:
+#             if not stack or stack[-1]!=pairs[i]:
+#                 return False
+#             stack.pop()
+#     return len(stack)==0
+# print(val("{[()]}"))
+# print(val("{[()"))
 
-
-# class node:
-#     def __init__(self,data):
-#         self.data=data
-#         self.next=None
-#         self.prev=None
-# class doublylinkedlist:
-#     def __init__(self):
-#         self.head=None
-#     def insert(self,data):
-#         new_node=node(data)
-#         if self.head is None:
-#            self.head=new_node
-#            return
-#         current=self.head
-#         while current.next:
-#             current=current.next
-#         current.next=new_node
-#         new_node.prev=current
-#     def forward(self):
-#         current=self.head
-#         while current:
-#             print(current.data,end="=>")
-#             current=current.next
-#         print("none")
-        
-#     def backward(self):
-#         current=self.head
-#         while current.next:
-#             current=current.next
-#         while current:
-#             print(current.data,end="=>")
-#             current=current.prev
-#         print("none")
-# obj=doublylinkedlist()
-# obj.insert(10)
-# obj.insert(20)
-# obj.insert(30)
-# obj.insert(40)
-# obj.forward()
-# obj.backward()
-
-
-        #    ______insert biggining doubly linked list
-
-# class node:
-#     def __init__(self,data):
-#         self.data=data
-#         self.next=None
-#         self.prev=None
-
-# class doublylinkedlist:
-#     def __init__(self):
-#         self.head=None
-#     def insertbiggining(self,data):
-#         new_node=node(data)
-#         if self.head is None:
-#             self.head=new_node
-#             return
-#         new_node.next=self.head
-#         self.head.prev=new_node
-#         self.head=new_node
-#     def forward(self):
-#         current=self.head
-#         while current:
-#             print(current.data,end="=>")
-#             current=current.next
-#         print("none")
-
-#     def backward(self):
-#         current=self.head
-#         while current.next:
-#             current=current.next
-#         while current:
-#             print(current.data,end="=>")
-#             current=current.prev
-#         print("none")
-# obj=doublylinkedlist()
-# obj.insertbiggining(10)
-# obj.insertbiggining(20)
-# obj.insertbiggining(30)
-# obj.insertbiggining(40)
-# obj.forward()
-# obj.backward()
-
-
-
- #    ______insert end doubly linked list
-
+# -----------------------------------------------------------------
 # class node:
 #     def __init__(self,data):
 #         self.data=data
@@ -4509,6 +4474,380 @@
 # class doublelinkedlist:
 #     def __init__(self):
 #         self.head=None
+#     def insert(self,data):
+#         new_node=node(data)
+#         if self.head is None:
+#             self.head=new_node
+#             return
+#         new_node.next=self.head
+#         self.head.prev=new_node
+#         self.head=new_node
+#     def insertend(self,data):
+#         new_node=node(data)
+#         if self.head is None:
+#             self.head=new_node
+#             return
+#         current=self.head
+#         while current.next:
+#             current=current.next
+#         current.next=new_node
+#         new_node.prev=current
+#     def deletebeggining(self):
+#         self.head=self.head.next
+#         if self.head is not None:
+#             self.head.prev=None
+#             return
+#     def deleteEnd(self):
+#         current=self.head
+#         while current.next.next:
+#             current=current.next
+#         current.next=None
+#     def insertPosition(self,data,position):
+#         new_node=node(data)
+#         position=2
+#         current=self.head
+#         for i in range(position-1):
+#             current=current.next
+#         new_node.next=current.next
+#         current.next=new_node
+#     def deleteposition(self):
+#         current=self.head
+#         while current.next.next:
+#             current=current.next
+#         current.next=None
+#     def display(self):
+#         current=self.head
+#         while current:
+#             print(current.data,end="=>")
+#             current=current.next
+#         print("none")
+# obj=doublelinkedlist()
+# obj.insert(10)
+# obj.insert(20)
+# obj.insert(30)
+# obj.insert(40)
+# obj.display()
+
+# obj1=doublelinkedlist()
+# obj1.insertend(10)
+# obj1.insertend(20)
+# obj1.insertend(30)
+# obj1.insertend(40)
+# obj1.display()
+
+# obj2=doublelinkedlist()
+# obj2.insert(10)
+# obj2.insert(20)
+# obj2.insert(30)
+# obj2.insert(40)
+# obj2.deletebeggining()
+# obj2.display()
+
+# obj3=doublelinkedlist()
+# obj3.insert(10)
+# obj3.insert(20)
+# obj3.insert(30)
+# obj3.insert(40)
+# obj3.deleteEnd()
+# obj3.display()
+
+# obj3=doublelinkedlist()
+# obj3.insert(10)
+# obj3.insert(20)
+# obj3.insert(30)
+# obj3.insert(40)
+# obj3.deleteEnd()
+# obj3.display()
+
+# obj4=doublelinkedlist()
+# obj4.insertend(10)
+# obj4.insertend(20)
+# obj4.insertend(30)
+# obj4.insertend(40)
+# obj4.deleteposition()
+# obj4.display()
+
+# ------------------------------------------------------------------------
+
+
+# a=10
+# b=20
+# res=a+b
+# print(res)
+
+
+# def val(n):
+#     for i in range(len(n)):
+#         for j in range(len(n),i-1):
+#             if n[j]>n[j+1]:
+#                 n[j],n[j+1]=n[j+1],n[j]
+#     return n
+# print(val([11,44,33,22,66,55]))
+
+
+
+# def val(n):
+#     for i in range(len(n)):
+#         min=i
+#         for j in range(i+1,len(n)):
+#             if n[j]<n[min]:
+#                 min=j
+#         n[i],n[min]=n[min],n[i]
+#     return n
+# print(val([11,33,22,55,44,77,66]))
+
+
+
+# def val(n):
+#     for i in range(len(n)):
+#         min=i
+#         for j in range(i+1,len(n)):
+#             if n[j]<n[min]:
+#                 min=j
+#         n[i],n[min]=n[min],n[i]
+#     return n
+# print(val([11,33,22,55,44]))
+
+
+# def val(n):
+#     if n<=1:
+#         return n
+#     return val(n-1)+val(n-2)
+# print(val(5))
+
+
+# def val(n):
+#     if n<2:
+#         return False
+#     for i in range(2,n):
+#         if n%i==0:
+#             return False
+#     return True
+# print(val(7))
+
+
+
+# def val(n):
+#     stack=[]
+#     for i in n:
+#         stack.append(i)
+#     res=""
+#     while stack:
+#         res+=stack.pop()
+#     return res
+# print(val("shifa"))
+
+
+# import copy
+# res=[[1,2,3],[4,5,6]]
+# res1=copy.deepcopy(res)
+# res1[1][1]=100
+# print(res)
+
+
+# class stack:
+#     def __init__(self):
+#         self.stack=[]
+#     def insert(self,data):
+#         self.stack.append(data)
+#     def display(self):
+#         print(self.stack)
+# obj=stack()
+# obj.insert(10)
+# obj.insert(20)
+# obj.insert(30)
+# obj.display()
+
+
+
+# class node:
+#     def __init__(self,data):
+#         self.data=data
+#         self.next=None
+#         self.prev=None
+# class doublyLinkedList:
+#     def __init__(self):
+#         self.head=None
+#     def insert(self,data):
+#         new_node=node(data)
+#         current=self.head
+#         if self.head is None:
+#             self.head=new_node
+#             return
+#         new_node.next=self.head
+#         self.head.prev=new_node
+#         self.head=new_node
+#     def insertEnd(self,data):
+#         new_node=node(data)
+#         if self.head is None:
+#             self.head=new_node
+#             return
+#         current=self.head
+#         while current.next:
+#             current=current.next
+#         current.next=new_node
+#     def deletebeggining(self):
+#         self.head=self.head.next
+#     def deleteEnd(self):
+#         if self.head is None:
+#             print("no value")
+#             return
+#         current=self.head
+#         while current.next.next:
+#             current=current.next
+#         current.next=None
+#     def insertposition(self,data,position):
+#         new_node=node(data)
+#         position=2
+#         current=self.head
+#         for i in range(position-2):
+#             current=current.next
+#         new_node.next=current.next
+#         current.next=new_node
+#         current=self.head
+#     def deleteposition(self,position):
+#         position=2
+#         current=self.head
+#         for i in range(position-2):
+#             current=current.next
+#         current.next=current.next.next
+#     def display(self):
+#         current=self.head
+#         while current:
+#             print(current.data,end="=>")
+#             current=current.next
+#         print("none")
+# obj=doublyLinkedList()
+# obj.insertEnd(10)
+# obj.insertEnd(20)
+# obj.insertEnd(30)
+# obj.insertEnd(40)
+# obj.deleteposition(2)
+# obj.display()
+        
+
+
+
+# def val(n):
+#     res=[]
+#     for i in n:
+#         if i in res:
+#             print(i)
+#         else:
+#             res.append(i)
+# print(val([11,22,11,22,22,33,44]))
+
+
+# def val(n):
+#     if len(n)==0:
+#         return ""
+#     return val(n[1:])+n[0]
+# print(val("shifa"))
+
+
+# def val(n,target):
+#     left=0
+#     right=len(n)-1
+#     while left<=right:
+#         mid=(left+right)//2
+#         if n[mid]==target:
+#             return mid
+#         elif n[mid]<target:
+#             left=mid+1
+#         else:
+#             right=mid-1
+# print(val([1,3,22,42,52,66],22))
+
+# num1=int(input("enter a value:"))
+# num2=int(input("enter sec value:"))
+# res=num1+num2
+# print(res)
+
+
+# def val(n):
+#     for i in range(len(n)):
+#         min=i
+#         for j in range(i+1,len(n)):
+#             if n[j]<n[min]:
+#                 min=j
+#         n[i],n[min]=n[min],n[i]
+#     return n
+# print(val([11,33,22,44,5,67]))
+
+
+
+
+# class node:
+#     def __init__(self,data):
+#         self.data=data
+#         self.next=None
+# n1=node(10)
+# n2=node(20)
+# n3=node(30)
+# n4=node(40)
+# n1.next=n2
+# n2.next=n3
+# n3.next=n4
+# head=n1
+# position=2
+# current=head
+# for i in range(position-1):
+#     current=current.next
+# current.next=current.next.next
+
+# current=head
+# while current:
+#     print(current.data,end="=>")
+#     current=current.next
+# print("none")
+
+
+
+
+# def val(n,i=2):
+#     if n<2:
+#         return 
+    
+#     if n%i==0:
+#             return False
+#     return val(i+1)
+# print(val(4))
+
+
+
+# class node:
+#     def __init__(self,data):
+#         self.data=data
+#         self.next=None
+# arr=[1,2,3,4,5,6]
+# head=node(arr[0])
+# current=head
+# for i in range(1,len(arr)):
+#     current.next=node(arr[i])
+#     current=current.next
+# current=head
+# while current:
+#     print(current.data,end="=>")
+#     current=current.next
+
+
+
+# class node:
+#     def __init__(self,data):
+#         self.data=data
+#         self.next=None
+#         self.prev=None
+# class doublelinkedlist():
+#     def __init__(self):
+#         self.head=None
+#     def insert(self,data):
+#         new_node=node(data)
+#         if self.head is None:
+#             self.head=new_node
+#             return
+#         new_node.next=self.head
+#         self.head.prev=new_node
+#         self.head=new_node
 #     def insertend(self,data):
 #         new_node=node(data)
 #         if self.head is None:
@@ -4518,9 +4857,28 @@
 #         while current.next:
 #             current=current.next
 #         current.next=new_node
-#         new_node.prev=current
-
-#     def forward(self):
+#     def deletebiggining(self):
+#         current=self.head
+#         self.head=self.head.next
+#     def deleteEnd(self):
+#         current=self.head
+#         while current.next.next:
+#             current=current.next
+#         current.next=None
+#     def insertPosition(self,data,position):
+#         new_node=node(data)
+#         position=2
+#         current=self.head
+#         for i in range(position-1):
+#             current=current.next
+#         new_node.next=current.next
+#         current.next=new_node
+#     def deleteposition(self,position):
+#         current=self.head
+#         for i in range(position-1):
+#             current=current.next
+#         current.next=current.next.next
+#     def display(self):
 #         current=self.head
 #         while current:
 #             print(current.data,end="=>")
@@ -4531,410 +4889,87 @@
 # obj.insertend(20)
 # obj.insertend(30)
 # obj.insertend(40)
-# obj.forward()
-
-
-
-#     _____delete beggoining double linkedlist
-
-# class node:
-#     def __init__(self,data):
-#         self.data=data
-#         self.next=None
-#         self.prev=None
-# class doublylinkedlist:
-#     def __init__(self):
-#         self.head=None
-#     def insert(self,data):
-#         new_node=node(data)
-#         if self.head is None:
-#             self.head=new_node
-#             return
-#         current=self.head
-#         while current.next:
-#             current=current.next
-#         current.next=new_node
-#         new_node.prev=current
-#     def deletefrst(self):
-#         if self.head is None:
-#             print("empty")
-#             return
-#         self.head=self.head.next
-#         if self.head is not None:
-#             self.head.prev=None 
-#     def display(self):
-#         current=self.head
-#         while current:
-#             print(current.data,end="=>")
-#             current=current.next
-#         print("none")
-# obj=doublylinkedlist()
-# obj.insert(10)
-# obj.insert(20)
-# obj.insert(30)
-# obj.insert(40)
-# obj.deletefrst()
+# obj.display()
+# # obj.deletebiggining()
+# # obj.display()
+# obj.deleteposition(2)
 # obj.display()
 
 
 
-# _____delete ending double linkedlist
 
-# class node:
-#     def __init__(self,data):
-#         self.data=data
-#         self.next=None
-#         self.prev=None
-# class doublylinkedlist:
-#     def __init__(self):
-#         self.head=None
-#     def insert(self,data):
-#         new_node=node(data)
-#         if self.head is None:
-#             self.head=new_node
-#             return
-#         current=self.head
-#         while current.next:
-#             current=current.next
-#         current.next=new_node
-#         new_node.prev=current
-#     def deleteend(self):
-#         if self.head is None:
-#             print(" empty none")
-#             return
-#         if self.head.next is None:
-#                     self.head = None
-#                     return
-                
-#         current=self.head
-#         while current.next:
-#             current=current.next
-#         current.prev.next=None
-#     def display(self):
-#         current=self.head
-#         while current:
-#             print(current.data,end="=>")
-#             current=current.next
-#         print("none")
-# obj=doublylinkedlist()
-# obj.insert(10)
-# obj.insert(20)
-# obj.insert(40)
-# obj.insert(45)
-# obj.deleteend()
-# obj.display()
+# class Solution:
+#     def search(self, nums: list[int], target: int) -> int:
+#         for i in nums:
+#             if nums[i]==target:
+#                 return i
+#             else:
+#                 return -1
+# obj=Solution()
+# print(obj.search([4,5,6,7,0,1,2],0))
+
+# class Solution:
+#     def uncommonFromSentences(self, s1: str, s2: str) -> list[str]:
+#         # result=[]
+#         res= s1.split()
+#         res1=s2.split()
+#         return res+res1
+#         # for i in s1:
+#         #     for j in s2:
+#         #         if s1[i]==s2[j]:
+#         #             result.append(s1[i])
+#         # return result
+# obj=Solution()
+# print(obj.uncommonFromSentences("this apple is sweet","this apple is sour"))
+# print(obj.uncommonFromSentences("apple apple","banana"))
+
+
+# class Solution:
+#     def uncommonFromSentences(self, s1: str, s2: str) -> list[str]:
+#         res= s1.split()
+#         res1=s2.split()
+#         result=res+res1
+#         count=0
+#         for i in range(len(result)):
+#             if count[i]==1:
+#                 return i
             
-
-#                  ________ insert value specific position
-
-# class node:
-#     def __init__(self,data):
-#         self.data=data
-#         self.next=None
-#         self.prev=None
-# class doublelinkedlist:
-#     def __init__(self):
-#         self.head=None
-#     def insert(self,data):
-#         new_node=node(data)
-#         if self.head is None:
-#             self.head=new_node
-#             return 
-#         current=self.head
-#         while current.next:
-#             current=current.next
-#         current.next=new_node
-#         new_node.prev=current
-#     def insertposition(self,data,position):
-#         new_node=node(data)
-#         current=self.head
-#         if position == 1:
-#             new_node.next = self.head
-#             if self.head:
-#                 self.head.prev = new_node
-#             self.head = new_node
-#             return
-#         current = self.head
-#         for i in range(position-2):
-#             current=current.next
-#         new_node.next=current.next
-#         new_node.prev=current
-#         if current.next:
-#             current.next.prev=new_node
-#         current.next=new_node
-#     def display(self):
-#         current=self.head
-#         while current.next:
-#             print(current.data,end="=>")
-#             current=current.next
-#         print("none")
-# obj=doublelinkedlist()
-# obj.insert(10)
-# obj.insert(20)
-# obj.insert(30)
-# obj.insert(40)
-# obj.insert(50)
-# obj.insertposition(1000,3)
-# obj.display()
-        
-
-#                _____delete the specific position doubly linked list
-
-# class node:
-#     def __init__(self,data):
-#         self.data=data
-#         self.next=None
-#         self.prev=None
-# class doublylinkedlist:
-#     def __init__(self):
-#         self.head=None
-#     def insert(self,data):
-#         new_node=node(data)
-#         current=self.head
-#         if self.head is None:
-#             self.head=new_node
-#             return
-#         current=self.head
-#         while current.next:
-#             current=current.next
-#         current.next=new_node
-#         new_node.prev=current
-#     def deleteEnd(self,position):
-#         current=self.head
-#         if position==1:
-#             self.head=self.head.next
-#             if self.head:
-#                 self.head.prev=None
-#             return
-#         current=self.head
-#         for i in range(position-1):
-#             current=current.next
-#         current.prev.next=current.next
-#         if current.next:
-#             current.next.prev=current.prev
-#     def display(self):
-#         current=self.head
-#         while current:
-#             print(current.data,end="=>")
-#             current=current.next
-#         print("none")
-# obj=doublylinkedlist()
-# obj.insert(10)
-# obj.insert(20)
-# obj.insert(30)
-# obj.insert(40)
-# obj.deleteEnd(2)
-# obj.display()
-
-
-
-
-# stack=[]
-# stack.append(10)
-# stack.append(20)
-# stack.append(30)
-# stack.append(40)
-# print(stack)
-# if len(stack)==0:
-#     print("empty")
-# else:
-#     print("number")
-
-
-
-# class stack:
-#     def __init__(self):
-#         self.stack=[]
-#     def insert(self,data):
-#         self.stack.append(data)
-#     def delete(self):
-#         self.stack.pop()
-#     def display(self):
-#         print(self.stack)
-# obj=stack()
-# obj.insert(10)
-# obj.insert(20)
-# obj.insert(30)
-# obj.display()
-# obj.delete()
-# obj.display()
-
-
-# def val(s):
-#     stack=[]
-#     for i in s:
-#         stack+=i
-#     res=""
-#     while stack:
-#         res+=stack.pop()
-#     return res
-# print(val("shifa"))
-
-
-
-# class node:
-#     def __init__(self,data):
-#         self.data=data
-#         self.next=None
-#         self.prev=None
-# class stack:
-#     def __init__(self):
-#         self.head=None
-#     def push(self,data):
-#         new_node=node(data)
-#         new_node.next=self.head
-#         self.head=new_node
-#     def size(self):
-#         return self.size
-#     def display(self):
-#         current = self.head
-#         while current:
-#             print(current.data, end=" => ")
-#             current = current.next
-#         print("None")
-# stack = stack()
-# stack.push(10)
-# stack.push(20)
-# stack.push(30)
-
-# print("Stack:")
-# stack.display()
-# stack.size()
-
-
-
-
-        
-# class Solution:
-#     def detectCapitalUse(self, word: str) -> bool:
-#         if word==word.upper() or word==word.lower() or word==word.title() and word[1:].lower():
-#             return True
-#         return False
 # obj=Solution()
-# print(obj.detectCapitalUse("USA"))
-# print(obj.detectCapitalUse("FlaG"))
+# print(obj.uncommonFromSentences("this apple is sweet","this apple is sour"))
+# print(obj.uncommonFromSentences("apple apple","banana"))
 
 
-# from collections import deque
-# queue=deque()
-# queue=[]
-# queue.append(10)
-# queue.append(20)
-# queue.append(30)
-# queue.append(40)
-# print(queue)
-# queue.popleft()
-# print(queue)
-
-
-
-# class hashing:
-#     def __init__(self):
-#         self.size=10
-#         self.table=[None]*self.size
-#     def hashingTable(self,key):
-#         return key%self.size
-#     def insert(self,key,value):
-#         index=self.hashingTable(key)
-#         self.table[index]=value
-#     def search(self,key):
-#         index=self.hashingTable(key)
-#         return self.table[index]
-# obj=hashing()
-# obj.insert(10,"shifa")
-# obj.insert(20,"safa")
-# obj.insert(22,"shahma")
-# print(obj.search(10))
-# print(obj.search(20))
-# print(obj.search(22))
-
-
-# class HashTable:
-#     def __init__(self, size):
-#         self.size = size
-#         self.table = [[] for _ in range(size)]
-#     def hash_function(self, key):
-#         return key % self.size
-#     def insert(self, key, value):
-#         index = self.hash_function(key)
-#         self.table[index].append((key, value))
-#     def display(self):
-#         for i in range(self.size):
-#             print(i, ":", self.table[i])
-# h = HashTable(5)
-# h.insert(10, "Apple")
-# h.insert(15, "Banana")
-# h.insert(6, "Appleeeeee")
-# h.insert(150, "Bananaaaaaaaa")
-# h.insert(7, "Mango")
-# h.insert(12, "Orange")
-# h.display()
-
-
-
-
-# name=[11,11,2,33,44,55,55,11]
-# freq={}
-# for i in name:
-#     freq[i]=freq.get(i,0)+1
-# max=max(freq,key=freq.get)
-# print(max)
-
-
-# def val(n):
-#     if n<=0:
-#         return
-#     print(n)
-#     val(n-1)
-# print(val(5))
-
-
-# def val(n):
-#     if n==1:
-#         return 1
-#     return n*val(n-1)
-# print(val(5))
-
-
-# def val(n):
-#     if len(n)==0:
-#         return ""
-#     return val(n[1:])+n[0]
-# print(val("shifa"))
-
-
-
-# def val(n,target):
-#     low=0
-#     high=len(n)-1
-#     while low<=high:
-#         mid=(low+high)//2
-#         if n[mid]==target:
-#             return mid
-#         elif low<target:
-#             low=mid+1
-#         else:
-#             high=mid-1
-# print(val([11,22,33,44,55],44))
 
 
 
 # class Solution:
-#     def isAnagram(self, s: str, t: str) -> bool:
-#         if list(s.sort()==t.sort()):
-#             return True
-#         return False
+#     def addBinary(self, a: str, b: str) -> str:
+#         res=int(a,2)
+#         res1=int(b,2)
+#         result=res+res1
+#         return bin(result)[2:]
 # obj=Solution()
-# print(obj.isAnagram("anagram","nagaram"))
-# print(obj.isAnagram("rat","car"))
+# print(obj.addBinary("11","1"))
+# print(obj.addBinary("1010","1011"))
+
+
+# class Solution:
+#     def addToArrayForm(self, num: list[int], k: int) -> list[int]:
+#         res=int("".join(map(str,num)))
+#         final=res+k
+#         return list(map(int,str(final)))
+# obj=Solution()
+# print(obj.addToArrayForm([1,2,0,0],34))
+# print(obj.addToArrayForm([2,7,4],181))
+# print(obj.addToArrayForm([2,1,5], 806))
 
 
 
-def val(arr):
-    n=len(arr)
-    for i in range(n):
-        for j in range(0,n-i-1):
-            if arr[j]>arr[j+1]:
-                arr[j],arr[j+1]=arr[j+1],arr[j]
-    return arr
-print(val([2,4,3,6,8,7]))
+class Solution:
+    def frequencySort(self, s: str) -> str:
+        res="".join(sorted(s))
+        return res
+obj=Solution()
+print(obj.frequencySort("tree"))
+print(obj.frequencySort("cccaaa"))
+print(obj.frequencySort("Aabb"))
