@@ -4965,11 +4965,27 @@
 
 
 
+# class Solution:
+#     def frequencySort(self, s: str) -> str:
+#         res="".join(sorted(s))
+#         return res
+# obj=Solution()
+# print(obj.frequencySort("tree"))
+# print(obj.frequencySort("cccaaa"))
+# print(obj.frequencySort("Aabb"))
+
+
+
+
 class Solution:
-    def frequencySort(self, s: str) -> str:
-        res="".join(sorted(s))
-        return res
+    def maximumProduct(self, nums: list[int]) -> int:
+        res=sorted(nums)
+        final= res[::-1]
+        val= final[:3]
+        for i in range(len(val)):
+                res=nums[i]*nums[-i]
+        return res   
 obj=Solution()
-print(obj.frequencySort("tree"))
-print(obj.frequencySort("cccaaa"))
-print(obj.frequencySort("Aabb"))
+print(obj.maximumProduct([1,2,3]))
+print(obj.maximumProduct([1,2,3,4]))
+print(obj.maximumProduct([-1,-2,-3]))
